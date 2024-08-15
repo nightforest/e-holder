@@ -1,0 +1,141 @@
+.details-section
+    padding: 40px 0 80px
+
+    @media ($max-md)
+        padding: 20px 0 50px
+
+    &__header
+        margin-bottom: 80px
+
+        @media ($max-lg)
+            margin-bottom: 40px
+        
+        @media ($max-md)
+            margin-bottom: 20px
+
+    &__inner
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        gap: 30px
+        margin-bottom: 60px
+
+        @media ($max-lg)
+            display: flex
+            flex-direction: column
+            gap: 50px
+            margin-bottom: 30px
+        
+        @media ($max-md)
+            gap: 30px
+
+    &__col
+        grid-column: 4 span
+
+        &:nth-child(2)
+
+            @media ($max-lg)
+                order: -1
+    
+    &__label
+        display: inline-flex
+        align-items: center
+        justify-content: center
+        height: 34px
+        padding: 4px 20px
+        margin-bottom: 30px
+        background: var(--yellow)
+        font-size: 16px
+        font-weight: 600
+        line-height: 1
+        color: var(--black)
+        text-align: center
+        border-radius: 5px
+
+        @media ($max-lg)
+            display: none
+
+    &__title
+        margin-bottom: 50px
+        font-size: clamp(32px, 4vw, 40px)
+        font-weight: 900
+        text-transform: uppercase
+
+        @media ($max-lg)
+            margin-bottom: 20px
+            text-align: center
+
+    &__descr
+        font-size: clamp(20px, 3vw, 24px)
+        line-height: 1.25
+
+        @media ($max-lg)
+            text-align: center
+    
+    &__status
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-bottom: 30px
+        gap: 10px
+        font-size: 20px
+        font-weight: 700
+        line-height: 1.25
+
+        @media ($max-md)
+            margin-bottom: 15px
+
+        svg
+            margin-top: -2px
+
+        &--green
+            color: var(--green-light)
+
+        &--red
+            color: var(--red)
+    
+    &__button
+        min-width: 0
+        width: 100%
+
+    &__tabs-nav
+
+        @media ($max-md)
+            display: none
+
+    &__tabs-select
+        margin-bottom: 20px
+
+        @media ($min-md)
+            display: none
+
+    &__tabs-content
+
+        &:not(:last-child)
+            margin-bottom: 15px
+
+    &__table
+
+        @media ($max-lg)
+
+            &:not(:last-child)
+                margin-bottom: 30px
+    
+    &__info
+        font-size: 24px
+        line-height: 1.25
+        text-align: center
+
+        @media ($max-lg)
+            font-size: 16px
+
+    &__text
+        font-size: 20px
+        line-height: 1.25
+
+        @media ($max-md)
+            font-size: 16px
+
+        p
+
+            &:not(:last-child)
+                margin-bottom: 1rem

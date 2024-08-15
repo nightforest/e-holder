@@ -1,0 +1,138 @@
+.tabs
+
+    &-nav
+        display: flex
+        justify-content: center
+        gap: 10px
+        margin: 0
+        padding: 0
+        list-style: none
+
+        @media ($max-sm)
+            flex-direction: column
+
+        &__item
+            width: 100%
+
+        &__button
+            position: relative
+            display: flex
+            align-items: center
+            justify-content: center
+            text-align: center
+            width: 100%
+            min-width: 0
+            height: 60px
+            padding: 10px
+            border-radius: 10px 10px 0 0
+            line-height: 1.2
+            background: var(--white)
+            color: var(--black)
+            font-size: 18px
+            font-weight: 600
+            outline: none
+            transition: color .5s ease, background .5s ease, transform .25s ease
+            transform-origin: bottom center
+
+            span
+                transition: transform .25s ease
+                transform-origin: bottom center
+            
+            &[aria-selected="true"]
+                transform: scaleY(1.2)
+
+                &:after
+                    transform: translateY(0)
+                    border-radius: 0
+
+                span
+                    transform: scaleY(.834)
+                
+    &-content
+        padding: 30px
+        border: 1px solid var(--white)
+        border-radius: 0 0 10px 10px
+
+        @media ($max-md)
+            padding: 0
+            border: none
+
+    &-panel
+        display: none
+
+        &[aria-hidden="false"]
+            display: block
+
+    &-select
+        position: relative
+
+        &__toggle
+            display: flex
+            align-items: center
+            justify-content: space-between
+            gap: 10px
+            height: 54px
+            width: 100%
+            padding: 5px 20px
+            border-radius: 10px
+            background: var(--white)
+            font-size: 18px
+            font-weight: 600
+            color: var(--black)
+
+            &[aria-expanded="true"]
+
+                .tabs-select__toggle-arrow
+                    transform: rotateX(180deg)
+
+            &-title
+                overflow: hidden
+                white-space: nowrap
+                text-overflow: ellipsis
+
+            &-arrow
+                color: var(--yellow)
+                transition: transform .5s ease
+        
+        &__dropdown
+            position: absolute
+            top: calc(100% + 10px)
+            left: 0
+            width: 100%
+            padding: 15px 0
+            border-radius: 10px
+            background: var(--white)
+            z-index: 1
+            box-shadow: 0 10px 15px 0 rgba(255, 255, 255, .25)
+            opacity: 0
+            visibility: hidden
+            transform: translateY(10px)
+            transition: opacity .25s ease, visibility .25s ease, transform .25s ease
+
+            &[aria-hidden="false"]
+                opacity: 1
+                visibility: visible
+                transform: translateY(0)
+        
+        &__list
+            margin: 0
+            padding: 0
+            list-style: none
+        
+        &__button
+            display: flex
+            width: 100%
+            padding: 10px 20px
+            font-size: 18px
+            font-weight: 600
+            color: var(--black)
+            line-height: 1.25
+            transition: color .5s ease
+
+            &[aria-selected="true"]
+                display: none
+
+            &:hover,
+            &:active,
+            &:focus-visible
+                color: var(--yellow)

@@ -1,0 +1,60 @@
+.contacts-section
+    position: relative
+    padding: 100px 0
+    overflow: hidden
+
+    @media ($max-md)
+        padding: 50px 0
+
+    &--inner
+        padding: 40px 0 100px
+
+        @media ($max-md)
+            padding: 20px 0 50px
+
+    &__bg
+        position: absolute
+        top: -20%
+        left: 0
+        width: 100%
+        height: 120%
+        will-change: transform
+        transition: .5s ease-out
+
+        &:after
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: linear-gradient(360deg, rgba(6, 40, 34, 0.6) 0%, #062822 100%)
+            content: ""
+
+        &-img
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+    &__header
+        margin-bottom: 90px
+
+        @media ($max-md)
+            margin-bottom: 50px
+
+    &__caption
+        margin-bottom: 25px
+
+    &__address
+        position: relative
+        margin-bottom: 25px
+    
+    &__form
+        padding: 30px 40px
+        border: 1px solid rgba(255, 255, 255, .15)
+        border-radius: 10px
+        background-color: rgba(255, 255, 255, .1)
+        backdrop-filter: blur(15px)
+        -webkit-backdrop-filter: blur(15px)
+
+        @media ($max-md)
+            padding: 25px 20px

@@ -1,0 +1,46 @@
+import animation from './includes/animation.js';
+import dataToggle from './includes/dataToggle.js';
+import dataTrigger from './includes/dataTrigger.js';
+import mobileNav from './includes/mobileNav.js';
+import photoSwipe from './includes/photoSwipe.js';
+import tabs from './includes/tabs.js';
+import filter from './includes/filter.js';
+import customCursor from './includes/customCursor.js';
+import modal from './includes/modal.js';
+import footerMenu from './includes/footerMenu.js';
+import servicesSlider from './includes/servicesSlider.js';
+import aboutSlider from './includes/aboutSlider.js';
+import productsSlider from './includes/productsSlider.js';
+import partnersSlider from './includes/partnersSlider.js';
+import phoneInput from './includes/phoneInput.js';
+import contactsFormValidation from './includes/contactsFormValidation.js';
+import loadMore from './includes/loadMore.js';
+import gallery from './includes/gallery.js';
+import callbackFormValidation from './includes/callbackFormValidation.js';
+import documentsSlider from './includes/documentsSlider.js';
+import historySlider from './includes/historySlider.js';
+import '../sass/main.sass';
+
+
+animation();
+dataToggle();
+dataTrigger();
+mobileNav();
+photoSwipe();
+tabs();
+filter();
+customCursor();
+modal();
+footerMenu();
+servicesSlider();
+aboutSlider();
+productsSlider();
+partnersSlider();
+phoneInput();
+contactsFormValidation();
+loadMore();
+gallery();
+callbackFormValidation();
+documentsSlider();
+historySlider();
+

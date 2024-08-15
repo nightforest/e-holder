@@ -1,0 +1,99 @@
+.lang
+    position: relative
+    height: 50px
+    width: 72px
+    min-width: 72px
+
+    @media ($max-md)
+        height: 35px
+        width: 50px
+        min-width: 50px
+
+    &__inner
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        border: 1px solid var(--black)
+        border-radius: 10px
+        overflow: hidden
+
+    &__toggle
+        display: flex
+        align-items: center
+        justify-content: space-between
+        gap: 8px
+        height: 48px
+        width: 100%
+        padding: 4px 12px
+        font-size: 18px
+        font-weight: 700
+        line-height: 1
+        text-transform: uppercase
+        color: var(--black)
+        transition: color .5s ease
+
+        @media ($max-md)
+            height: 33px
+            padding: 4px 8px
+            font-size: 14px
+            gap: 4px
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            color: var(--yellow)
+
+        &[aria-expanded="true"]
+
+            .lang__toggle-arrow
+                transform: rotateX(180deg)
+
+        &-arrow
+            min-width: 14px
+            color: var(--yellow)
+            transition: transform .5s ease
+
+            @media ($max-md)
+                min-width: 10px
+                width: 10px
+
+    &__dropdown
+        display: grid
+        grid-template-rows: 0fr
+        transition: grid-template-rows .25s
+
+        &[aria-hidden="false"]
+            grid-template-rows: 1fr
+
+    &__list
+        background: var(--white)
+        margin: 0
+        padding: 0
+        list-style: none
+        overflow: hidden
+
+    &__item
+        margin-bottom: 12px
+
+        @media ($max-md)
+            margin-bottom: 8px
+    
+    &__link
+        display: block
+        padding: 0 12px
+        text-transform: uppercase
+        color: var(--black)
+        font-size: 18px
+        font-weight: 700
+        line-height: 1
+        transition: color .5s ease
+
+        @media ($max-md)
+            padding: 0 8px
+            font-size: 14px
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            color: var(--yellow)

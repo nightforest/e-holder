@@ -1,0 +1,90 @@
+.filter
+    .filter__sidebar
+        .filter__header
+            h2.filter__title Фільтр
+
+            svg.filter__icon(width="26" height="24")
+                use(xlink:href="img/sprite.svg#filter")
+
+            button.filter__close(type="button" aria-label="Close filter" data-filter-close)
+                svg.filter__close-icon(width="20" height="20")
+                    use(xlink:href="img/sprite.svg#close")
+
+        .filter__inner
+            .filter-block
+                button.filter-block__toggle(type="button" data-trigger="filter-block-1" aria-expanded="true") Number of cylinder
+                    svg.filter-block__toggle-icon(width="16" height="12")
+                        use(xlink:href="img/sprite.svg#dropdown-arrow")
+                
+                #filter-block-1.filter-block__body(aria-hidden="false")
+                    .filter-block__inner
+                        ul.filter-block__list
+                            li.filter-block__item
+                                .checkbox.filter-block__checkbox
+                                    input.checkbox__input#filterCheckbox-1(type="checkbox" name="filterCheckbox-1" value="true" checked)
+                                    label.checkbox__label(for="filterCheckbox-1") 1
+                            
+                            li.filter-block__item
+                                .checkbox.filter-block__checkbox
+                                    input.checkbox__input#filterCheckbox-2(type="checkbox" name="filterCheckbox-2" value="true")
+                                    label.checkbox__label(for="filterCheckbox-2") 2
+
+                            li.filter-block__item
+                                .checkbox.filter-block__checkbox
+                                    input.checkbox__input#filterCheckbox-3(type="checkbox" name="filterCheckbox-3" value="true")
+                                    label.checkbox__label(for="filterCheckbox-3") 3
+
+            .filter-block
+                button.filter-block__toggle(type="button" data-trigger="filter-block-2" aria-expanded="true") Cylinder arrangement
+                    svg.filter-block__toggle-icon(width="16" height="12")
+                        use(xlink:href="img/sprite.svg#dropdown-arrow")
+                
+                #filter-block-2.filter-block__body(aria-hidden="false")
+                    .filter-block__inner
+                        ul.filter-block__list
+                            li.filter-block__item
+                                .checkbox.filter-block__checkbox
+                                    input.checkbox__input#filterCheckbox-21(type="checkbox" name="filterCheckbox-21" value="true" checked)
+                                    label.checkbox__label(for="filterCheckbox-21") Standard Voltages 380 – 415 Volts
+                            
+                            li.filter-block__item
+                                .checkbox.filter-block__checkbox
+                                    input.checkbox__input#filterCheckbox-22(type="checkbox" name="filterCheckbox-22" value="true")
+                                    label.checkbox__label(for="filterCheckbox-22") Standard Voltages 380 – 415 Volts
+
+                            li.filter-block__item
+                                .checkbox.filter-block__checkbox
+                                    input.checkbox__input#filterCheckbox-23(type="checkbox" name="filterCheckbox-23" value="true")
+                                    label.checkbox__label(for="filterCheckbox-23") Standard Voltages 380 – 415 Volts
+                            
+                            li.filter-block__item
+                                .checkbox.filter-block__checkbox
+                                    input.checkbox__input#filterCheckbox-24(type="checkbox" name="filterCheckbox-24" value="true" checked)
+                                    label.checkbox__label(for="filterCheckbox-24") Standard Voltages 380 – 415 Volts
+
+            .filter-block
+                button.filter-block__toggle(type="button" data-trigger="filter-block-3" aria-expanded="true") Combustion system
+                    svg.filter-block__toggle-icon(width="16" height="12")
+                        use(xlink:href="img/sprite.svg#dropdown-arrow")
+                
+                #filter-block-3.filter-block__body(aria-hidden="false")
+                    .filter-block__inner
+                        ul.filter-block__list
+                            li.filter-block__item
+                                .checkbox.filter-block__checkbox
+                                    input.checkbox__input#filterCheckbox-31(type="checkbox" name="filterCheckbox-31" value="true" checked)
+                                    label.checkbox__label(for="filterCheckbox-31") 3 Phase 50/60HZ
+                            
+                            li.filter-block__item
+                                .checkbox.filter-block__checkbox
+                                    input.checkbox__input#filterCheckbox-32(type="checkbox" name="filterCheckbox-32" value="true")
+                                    label.checkbox__label(for="filterCheckbox-32") 3 Phase 50/60HZ
+
+                            li.filter-block__item
+                                .checkbox.filter-block__checkbox
+                                    input.checkbox__input#filterCheckbox-33(type="checkbox" name="filterCheckbox-33" value="true")
+                                    label.checkbox__label(for="filterCheckbox-33") 3 Phase 50/60HZ
+
+            .filter__buttons-group
+                button.button.filter__button(type="button") Застосувати
+                button.button.button--white.filter__button(type="button") Очистити

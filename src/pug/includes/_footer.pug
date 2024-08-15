@@ -1,0 +1,148 @@
+footer.footer
+    .container.container--fluid.footer__container
+        .footer__row
+            .footer__col.animation-fade
+                .logo.footer__logo
+                    a.logo__link(href="#" aria-label="logo")
+                        img.logo__img(src="img/logo.svg" width="145" height="100" loading="lazy" alt="logo")
+                
+                address.social.footer__social
+                    ul.social__list
+                        li.social__item
+                            a.button.social__button(href="#" aria-label="Facebook")
+                                svg.social__icon(width="12" height="22")
+                                    use(xlink:href="img/sprite.svg#facebook")
+
+                        li.social__item
+                            a.button.social__button(href="#" aria-label="Instagram")
+                                svg.social__icon(width="22" height="22")
+                                    use(xlink:href="img/sprite.svg#instagram")
+
+                        li.social__item
+                            a.button.social__button(href="#" aria-label="YouTube")
+                                svg.social__icon(width="22" height="16")
+                                    use(xlink:href="img/sprite.svg#youtube")
+
+            .footer__col.animation-fade
+                h3.footer__title.footer__title--hidden-md
+                    span Меню
+
+                nav.footer-menu
+                    button.footer-menu__toggle(type="button" data-trigger="footer-menu-1" aria-expanded="true") Меню
+                        svg.footer-menu__toggle-icon(width="15" height="9")
+                            use(xlink:href="img/sprite.svg#dropdown-arrow")
+                    
+                    #footer-menu-1.footer-menu__inner(aria-hidden="false")
+                        ul.footer-menu__list
+                            li.footer-menu__item
+                                a.footer-menu__link(href="#") Головна
+                            
+                            li.footer-menu__item
+                                a.footer-menu__link(href="#") Послуги
+
+                            li.footer-menu__item
+                                a.footer-menu__link(href="#") Продукція
+                            
+                            li.footer-menu__item
+                                a.footer-menu__link(href="#") Про компанію
+                            
+                            li.footer-menu__item
+                                a.footer-menu__link(href="#") Контакти
+                            
+                            li.footer-menu__item
+                                a.footer-menu__link(href="#") Умови використання сайту
+
+                            li.footer-menu__item
+                                a.footer-menu__link(href="#") Політика конфіденційності
+                            
+                            li.footer-menu__item
+                                a.footer-menu__link(href="#") Права та обов'язки користувачів
+            
+            .footer__col.animation-fade
+                h3.footer__title.footer__title--hidden-md
+                    span Продукція
+
+                nav.footer-menu
+                    button.footer-menu__toggle(type="button" data-trigger="footer-menu-2" aria-expanded="true") Продукція
+                        svg.footer-menu__toggle-icon(width="15" height="9")
+                            use(xlink:href="img/sprite.svg#dropdown-arrow")
+                    
+                    #footer-menu-2.footer-menu__inner(aria-hidden="false")
+                        ul.footer-menu__list
+                            li.footer-menu__item
+                                a.footer-menu__link(href="#") WPSP-22S
+                            
+                            li.footer-menu__item
+                                a.footer-menu__link(href="#") WPSP-33S
+
+                            li.footer-menu__item
+                                a.footer-menu__link(href="#") WPSP-50S
+
+            .footer__col.animation-fade
+                h3.footer__title.footer__title--hidden-md
+                    span Послуги
+
+                nav.footer-menu
+                    button.footer-menu__toggle(type="button" data-trigger="footer-menu-3" aria-expanded="true") Послуги
+                        svg.footer-menu__toggle-icon(width="15" height="9")
+                            use(xlink:href="img/sprite.svg#dropdown-arrow")
+                    
+                    #footer-menu-3.footer-menu__inner(aria-hidden="false")
+                        ul.footer-menu__list
+                            li.footer-menu__item
+                                a.footer-menu__link(href="#") Продаж обладнання
+                            
+                            li.footer-menu__item
+                                a.footer-menu__link(href="#") Встановлення обладнання
+
+                            li.footer-menu__item
+                                a.footer-menu__link(href="#") Обслуговування обладнання
+
+                            li.footer-menu__item
+                                a.footer-menu__link(href="#") Підтримка наших клієнтів
+
+            .footer__col.animation-fade
+                h3.footer__title
+                    span Контакти
+
+                address.contacts.footer__contacts
+                    ul.contacts__list
+                        li.contacts__item
+                            svg.contacts__icon(width="20" height="20")
+                                use(xlink:href="img/sprite.svg#phone")
+                            
+                            .contacts__content
+                                a.contacts__link(href="tel:+ 380111111111") + 38 (011)-11-11-111
+                        
+                        li.contacts__item
+                            svg.contacts__icon(width="20" height="16")
+                                use(xlink:href="img/sprite.svg#email")
+                            
+                            .contacts__content
+                                a.contacts__link(href="mailto:info@e-holder.com") info@e-holder.com
+                        
+                        li.contacts__item
+                            svg.contacts__icon(width="20" height="20")
+                                use(xlink:href="img/sprite.svg#time")
+                            
+                            .contacts__content
+                                p.contacts__text Понеділок - П'ятниця: 9:00-18:00 Субота - Неділя: вихідний
+                        
+                        li.contacts__item
+                            svg.contacts__icon(width="16" height="20")
+                                use(xlink:href="img/sprite.svg#location")
+                            
+                            .contacts__content
+                                p.contacts__text 716/24 Rybná, Prague 1, post code: 11000, Czechia
+
+        .footer__bottom
+            .footer__copyright &copy; E-holder 2024 Всі права захищені.
+
+            .footer__dev Розроблено
+                a.footer__dev-link(href="https://shafem.com/" aria-label="Developer link" target="_blank")
+                    img.footer__dev-img(src="img/shafem.svg" width="103" height="22" loading="lazy" alt="shafem")
+
+    a.button.up-button(href="#main")
+        svg.button__icon(width="19" height="11")
+            use(xlink:href="img/sprite.svg#up-arrow")
+            

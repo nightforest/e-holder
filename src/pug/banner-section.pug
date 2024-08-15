@@ -1,0 +1,21 @@
+section.banner-section.parallax-section
+    picture.banner-section__bg.parallax-section__bg
+        source(srcset="img/banner-bg-mobile@2x.webp 2x, img/banner-bg-mobile.webp" width="375" height="581" media="(max-width: 575.98px)")
+        img.banner-section__bg-img(src="img/banner-bg.webp" srcset="img/banner-bg@2x.webp 2x" width="1920" height="811" alt="alt")
+
+    .container.banner-section__container
+        h1.banner-section__title.animation-down
+            span.banner-section__title-outline Енергія майбутнього
+            span вже 
+            span.yellow-color сьогодні з E-holder
+        
+        .banner-section__content.animation-down(data-delay="0.4")
+            h2.banner-section__subtitle Альтернативні джерела енергії для вашого будинку та бізнесу
+            
+            .banner-section__buttons
+                a.button.banner-section__button(href="#") Наші послуги
+                a.button.button--outline.banner-section__button(href="#") Наші продукти
+
+    a.banner-section__arrow-button.animation-fade(href="#services-section" aria-label="Scroll down")
+        svg(width="36" height="20")
+            use(xlink:href="img/sprite.svg#dropdown-arrow")

@@ -1,0 +1,56 @@
+.stars-rating
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    flex-direction: row-reverse
+    gap: 5px
+    border: none
+    padding: 0
+    margin: 0
+
+    &:not(:checked) > input
+        position: absolute
+        top: -9999px
+        clip: rect(0, 0, 0, 0)
+
+    &:not(:checked) > label
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 18px
+        height: 18px
+        padding: 0
+        overflow: hidden
+        white-space: nowrap
+        cursor: pointer
+        font-size: 0
+        line-height: 1
+
+    &__icon
+        fill: var(--white)
+        stroke: var(--tertiary)
+        transition: all .5s ease
+
+    & > input:checked ~ label
+
+        .stars-rating__icon
+            fill: var(--primary)
+            stroke: var(--primary)
+
+    &:not(:checked) > label:hover, 
+    &:not(:checked) > label:hover ~ label
+
+        .stars-rating__icon
+            fill: var(--tertiary)
+            stroke: var(--tertiary)
+
+    & > input:checked + label:hover, 
+    & > input:checked + label:hover ~ label, 
+    & > input:checked ~ label:hover, 
+    & > input:checked ~ label:hover ~ label, 
+    & > label:hover ~ input:checked ~ label
+        fill: var(--primary)
+        stroke: var(--primary)
+
+    & > label:active
+        position: relative

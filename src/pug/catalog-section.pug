@@ -1,0 +1,129 @@
+section.catalog-section
+    .container.container--fluid.catalog-section__container
+        header.section-header.catalog-section__header
+            nav.breadcrumbs.section-header__breadcrumbs.animation-down(aria-label="breadcrumb")
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Головна
+                        
+                    li.breadcrumbs__item(aria-current="page") Каталог продукції
+        
+            h1.section-header__title.animation-down(data-delay="0.4") Каталог продукції
+
+            button.button.button--white.catalog-section__filter-button.animation-down(data-delay="0.6" type="button" data-filter-toggle) Фільтр
+                svg.button__icon(width="26" height="24")
+                    use(xlink:href="img/sprite.svg#filter")
+
+        .catalog-section__inner        
+            aside.catalog-section__sidebar
+                include ./includes/_filter.pug
+
+            article.catalog-section__article
+                ul.catalog-section__list
+                    li.catalog-section__item.animation-fade
+                        article.product-card
+                            a.product-card__link(href="#") 
+                                picture.product-card__picture
+                                    img.product-card__img(src="img/product-img.webp" srcset="img/product-img@2x.webp 2x" loading="lazy" width="441" height="284" alt="alt")
+                            
+                            .product-card__content
+                                h3.product-card__title WPSP-22S
+                                p.product-card__descr Standard Voltages 380 – 415 Volts 3 Phase 50/60HZ
+
+                                .product-card__buttons
+                                    a.button.product-card__button(href="#") Залишити заявку
+                                    a.button.button--white.product-card__button(href="#") Детальніше
+                            
+                    li.catalog-section__item.animation-fade
+                        article.product-card
+                            a.product-card__link(href="#") 
+                                picture.product-card__picture
+                                    img.product-card__img(src="img/product-img.webp" srcset="img/product-img@2x.webp 2x" loading="lazy" width="441" height="284" alt="alt")
+                            
+                            .product-card__content
+                                h3.product-card__title WPSP-22S
+                                p.product-card__descr Standard Voltages 380 – 415 Volts 3 Phase 50/60HZ
+
+                                .product-card__buttons
+                                    a.button.product-card__button(href="#") Залишити заявку
+                                    a.button.button--white.product-card__button(href="#") Детальніше
+                    
+                    li.catalog-section__item.animation-fade
+                        article.product-card
+                            a.product-card__link(href="#") 
+                                picture.product-card__picture
+                                    img.product-card__img(src="img/product-img.webp" srcset="img/product-img@2x.webp 2x" loading="lazy" width="441" height="284" alt="alt")
+                            
+                            .product-card__content
+                                h3.product-card__title WPSP-22S
+                                p.product-card__descr Standard Voltages 380
+
+                                .product-card__buttons
+                                    a.button.product-card__button(href="#") Залишити заявку
+                                    a.button.button--white.product-card__button(href="#") Детальніше
+                            
+                    li.catalog-section__item.animation-fade
+                        article.product-card
+                            a.product-card__link(href="#") 
+                                picture.product-card__picture
+                                    img.product-card__img(src="img/product-img.webp" srcset="img/product-img@2x.webp 2x" loading="lazy" width="441" height="284" alt="alt")
+                            
+                            .product-card__content
+                                h3.product-card__title WPSP-22S
+                                p.product-card__descr Standard Voltages 380 – 415 Volts 3 Phase 50/60HZ
+
+                                .product-card__buttons
+                                    a.button.product-card__button(href="#") Залишити заявку
+                                    a.button.button--white.product-card__button(href="#") Детальніше
+                    
+                    li.catalog-section__item.animation-fade
+                        article.product-card
+                            a.product-card__link(href="#") 
+                                picture.product-card__picture
+                                    img.product-card__img(src="img/product-img.webp" srcset="img/product-img@2x.webp 2x" loading="lazy" width="441" height="284" alt="alt")
+                            
+                            .product-card__content
+                                h3.product-card__title WPSP-22S
+                                p.product-card__descr Standard Voltages 380 – 415 Volts 3 Phase 50/60HZ
+
+                                .product-card__buttons
+                                    a.button.product-card__button(href="#") Залишити заявку
+                                    a.button.button--white.product-card__button(href="#") Детальніше
+                            
+                    li.catalog-section__item.animation-fade
+                        article.product-card
+                            a.product-card__link(href="#") 
+                                picture.product-card__picture
+                                    img.product-card__img(src="img/product-img.webp" srcset="img/product-img@2x.webp 2x" loading="lazy" width="441" height="284" alt="alt")
+                            
+                            .product-card__content
+                                h3.product-card__title WPSP-22S
+                                p.product-card__descr Standard Voltages 380 – 415 Volts 3 Phase 50/60HZ
+
+                                .product-card__buttons
+                                    a.button.product-card__button(href="#") Залишити заявку
+                                    a.button.button--white.product-card__button(href="#") Детальніше
+
+                nav.pagination.catalog-section__pagination.animation-fade(aria-label="Page navigation")
+                    ul.pagination__list
+                        li.pagination__item
+                            button.pagination__button(type="button" aria-label="Previous page")
+                                svg.pagination__icon(width="9" height="14")
+                                    use(xlink:href="img/sprite.svg#arrow-left")
+
+                        li.pagination__item.is-active(aria-current="page")
+                            button.pagination__button(type="button") 1
+                        
+                        li.pagination__item
+                            button.pagination__button(type="button") 2
+                        
+                        li.pagination__item
+                            span ...
+                        
+                        li.pagination__item
+                            button.pagination__button(type="button") 10
+
+                        li.pagination__item
+                            button.pagination__button(type="button" aria-label="Next page")
+                                svg.pagination__icon(width="9" height="14")
+                                    use(xlink:href="img/sprite.svg#arrow-right")

@@ -1,0 +1,28 @@
+.about-slider
+    position: relative
+    overflow: visible
+    --swiper-scrollbar-bg-color: rgba(6, 40, 34, .2)
+
+    @media ($max-md)
+        padding-bottom: 23px
+
+    &__wrapper
+
+        @media ($min-md)
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            gap: 30px
+            margin: 0
+            padding: 0
+
+        @media ($min-lg)
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            gap: 30px
+            margin: 0
+            padding: 0
+
+    &__scrollbar
+
+        @media ($min-md)
+            display: none

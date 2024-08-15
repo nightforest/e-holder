@@ -1,0 +1,42 @@
+.contacts
+    font-style: normal
+    
+    &__list
+        margin: 0
+        padding: 0
+        list-style: none
+    
+    &__item
+        display: flex
+        align-items: center
+        gap: 12px
+        font-size: 16px
+        font-weight: 700
+
+        @media ($max-xl)
+            font-size: 14px
+        
+        @media ($max-md)
+            font-weight: 500
+
+        &:not(:last-child)
+            margin-bottom: 30px
+
+            @media ($max-md)
+                margin-bottom: 20px
+
+    &__icon
+        width: 20px
+        height: 20px
+        min-width: 20px
+        text-align: center
+        color: var(--yellow)
+
+    &__link
+        color: var(--white)
+        transition: color .5s ease
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            color: var(--yellow)

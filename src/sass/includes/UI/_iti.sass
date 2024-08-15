@@ -1,0 +1,29 @@
+.iti
+    display: block
+
+.iti__selected-country
+    position: relative
+    border-right: 1px solid var(--white)
+    padding-right: 25px
+
+    &:before
+        position: absolute
+        top: 50%
+        right: 6px
+        width: 12px
+        height: 12px
+        margin-top: -6px
+        background: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.40594 6.74815L0.246288 1.46799C-0.0820973 1.1321 -0.0820972 0.587528 0.246288 0.251809C0.574382 -0.0839371 1.10652 -0.083937 1.43458 0.251809L6.00009 4.92394L10.5654 0.251945C10.8937 -0.0838008 11.4257 -0.0838008 11.7538 0.251946C12.0821 0.587692 12.0821 1.13224 11.7538 1.46812L6.5941 6.74829C6.42997 6.91616 6.2151 7 6.00011 7C5.78502 7 5.56998 6.916 5.40594 6.74815Z' fill='white' style='fill:white;fill-opacity:1;'/%3E%3C/svg%3E%0A") no-repeat center center
+        content: ""
+        transition: transform .5s ease
+    
+    &[aria-expanded="true"]
+
+        &:before
+            transform: rotateX(180deg)
+
+.iti__dropdown-content
+    color: var(--black)
+
+.iti__arrow
+    display: none

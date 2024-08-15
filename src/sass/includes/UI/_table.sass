@@ -1,0 +1,55 @@
+.table
+    width: 100%
+    max-width: 100%
+    border-collapse: separate
+    border-spacing: 0
+    table-layout: fixed
+
+    tbody
+
+        tr
+            th,
+            td
+                border-right: 1px solid var(--white)
+                border-bottom: 1px solid var(--white)
+                border-collapse: collapse
+                font-size: 20px
+                font-weight: 400
+                line-height: 1.2
+                padding: 12px 4px
+                text-align: center
+
+                @media ($max-md)
+                    font-size: 16px
+
+                &:first-child
+                    border-left: 1px solid var(--white)
+
+                &.yellow-color
+                    color: var(--yellow)
+                    font-weight: 500
+
+                &.green-bg
+                    background: var(--green-medium)
+                
+            &:first-child
+
+                th,
+                td
+                    border-top: 1px solid var(--white)
+
+                    &:first-child
+                        border-top-left-radius: 10px
+                    
+                    &:last-child
+                        border-top-right-radius: 10px
+
+            &:last-child
+
+                th,
+                td
+                    &:first-child
+                        border-bottom-left-radius: 10px
+                    
+                    &:last-child
+                        border-bottom-right-radius: 10px

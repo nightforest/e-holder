@@ -1,0 +1,79 @@
+.pagination
+
+    &__list
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        gap: 12px
+        padding-left: 0
+        list-style: none
+        margin: 0
+
+        @media ($max-md)
+            justify-content: center
+
+    &__item
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 50px
+        padding: 0
+        line-height: 1
+        color: var(--white)
+        font-size: 16px
+        font-weight: 600
+        text-align: center
+
+        &.is-active
+
+            .pagination__button
+                outline: none
+                color: var(--black)
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .08), 0 0 4px 0 rgba(0, 0, 0, .04)
+
+                &:after
+                    transform: translateY(0)
+                    border-radius: 0
+
+    &__button
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 50px
+        height: 50px
+        border-radius: 10px
+        text-decoration: none
+        font-size: 16px
+        font-weight: 600
+        background: var(--white)
+        color: var(--black)
+        line-height: 1
+        transition: background .5s ease, color .5s ease, border-color .5s ease
+        outline: none
+        overflow: hidden
+        z-index: 1
+        will-change: transform
+
+        &:after
+            content: ''
+            background: var(--yellow-dark)
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            border-radius: 50%
+            transform: translateY(-100%)
+            transition: transform .25s ease, border-radius .25s ease
+            z-index: -1
+        
+        &:hover,
+        &:active,
+        &:focus-visible
+            outline: none
+            color: var(--black)
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .08), 0 0 4px 0 rgba(0, 0, 0, .04)
+
+            &:after
+                transform: translateY(0)
+                border-radius: 0

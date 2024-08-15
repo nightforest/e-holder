@@ -1,0 +1,76 @@
+section.contacts-section.parallax-section
+    picture.contacts-section__bg.parallax-section__bg
+        source(srcset="img/contacts-bg-mobile@2x.webp 2x, img/contacts-bg-mobile.webp" width="375" height="906" media="(max-width: 575.98px)")
+        img.contacts-section__bg-img(src="img/contacts-bg.webp" srcset="img/contacts-bg@2x.webp 2x" width="1920" height="751" alt="alt")
+
+    .container
+        .caption.animation-title.contacts-section__caption
+            .caption__inner
+                .caption__bg-text Контакти
+                h2.caption__title Контакти
+        
+        address.address.contacts-section__address
+            ul.address__list
+                li.address__item.animation-fade(data-delay="0")
+                    .address__pic
+                        svg.address__icon(width="20" height="20")
+                            use(xlink:href="img/sprite.svg#phone")
+                    
+                    .address__content
+                        a.address__link(href="tel:+ 380111111111") + 38 (011)-11-11-111
+                
+                li.address__item.animation-fade(data-delay="0.2")
+                    .address__pic
+                        svg.address__icon(width="20" height="16")
+                            use(xlink:href="img/sprite.svg#email")
+                    
+                    .address__content
+                        a.address__link(href="mailto:info@e-holder.com") info@e-holder.com
+                
+                li.address__item.animation-fade(data-delay="0.4")
+                    .address__pic
+                        svg.address__icon(width="20" height="20")
+                            use(xlink:href="img/sprite.svg#time")
+                    
+                    .address__content
+                        p.address__text Понеділок - П'ятниця: 9:00-18:00 
+                        p.address__text Субота - Неділя: вихідний
+                
+                li.address__item.animation-fade(data-delay="0.6")
+                    .address__pic
+                        svg.address__icon(width="16" height="20")
+                            use(xlink:href="img/sprite.svg#location")
+                    
+                    .address__content
+                        p.address__text Czech Republic
+                        
+        form.form.contacts-section__form.animation-down(id="contacts-form" autocomplete="off" novalidate="novalidate")
+            fieldset.form__fieldset
+                legend.form__legend Залишились питання?
+
+                .form__row
+                    .form__col
+                        .form__group
+                            input#contactsInputName.input.form__input(type="text" name="contactsInputName" placeholder="Ім'я *" data-error-message="Введіть імʼя" autocomplete="off" required)
+
+                    .form__col
+                        .form__group
+                            input#contactsInputPhone.input.form__input.tell-input(type="tel" name="contactsInputPhone" data-error-message="Введіть телефон" autocomplete="off" required)
+
+                    .form__col
+                        .form__group
+                            input#contactsInputEmail.input.form__input(type="email" name="contactsInputEmail" placeholder="Пошта *" data-error-message="Введіть email" autocomplete="off" required)
+
+                .form__group
+                    textarea#contactsTextarea.textarea.form__input(name="contactsTextarea" rows="4" placeholder="Коментар" autocomplete="off")
+                
+                .form__group.form__group--center
+                    .checkbox
+                        input.checkbox__input#contactsAgree(type="checkbox" name="contactsAgree" value="true" required)
+                        label.checkbox__label(for="contactsAgree") Погоджуюсь з 
+                            a.checkbox__link(href="#") Політикою конфіденційності
+                            |  та 
+                            a.checkbox__link(href="#") Умовами використання сайту
+
+                .form__group.form__group--center
+                    button.button.form__button Відправити

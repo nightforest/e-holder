@@ -1,0 +1,39 @@
+.modal-wrap
+    #modal-callback.modal
+        .modal__inner
+            .modal__window
+                button.modal__close(aria-label="Close modal" data-modal-close type="button")
+                    svg.modal__close-icon(width="20" height="20")
+                        use(xlink:href="img/sprite.svg#close")
+
+                .modal__content
+                    form.form.modal__form(id="callback-form" autocomplete="off" novalidate="novalidate")
+                        fieldset.form__fieldset
+                            legend.form__legend Залишити заявку
+
+                            .form__group
+                                input#callbackInputName.input.form__input(type="text" name="callbackInputName" placeholder="Ім'я *" data-error-message="Введіть імʼя" autocomplete="off" required)
+
+                            .form__group
+                                input#callbackInputPhone.input.form__input.tell-input(type="tel" name="callbackInputPhone" data-error-message="Введіть телефон" autocomplete="off" required)
+
+                            .form__group
+                                input#callbackInputEmail.input.form__input(type="email" name="callbackInputEmail" placeholder="Пошта *" data-error-message="Введіть email" autocomplete="off" required)
+
+                            .form__group
+                                textarea#callbackTextarea.textarea.form__input(name="callbackTextarea" rows="4" placeholder="Коментар" autocomplete="off")
+                            
+                            .form__group
+                                input#callbackInputTime.input.form__input(type="text" name="callbackInputTime" placeholder="Бажаний час (9:00 - 18:00, кожні пів години)" autocomplete="off")
+                            
+                            .form__group.form__group--center
+                                .checkbox
+                                    input.checkbox__input#callbackAgree(type="checkbox" name="callbackAgree" value="true" required)
+                                    label.checkbox__label(for="callbackAgree") Погоджуюсь з 
+                                        a.checkbox__link(href="#") Політикою конфіденційності
+                                        |  та 
+                                        a.checkbox__link(href="#") Умовами використання сайту
+
+                            .form__group.form__group--center
+                                button.button.form__button Відправити
+                                

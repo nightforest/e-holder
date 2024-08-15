@@ -1,0 +1,19 @@
+.history-slider
+    position: relative
+    overflow: visible
+    padding-bottom:  30px
+
+    @media ($max-lg)
+        padding-bottom: 23px
+
+    &__slide
+
+        .history-card
+            opacity: .3
+        
+        &.swiper-slide-active,
+        &.swiper-slide-next,
+        &.swiper-slide-next + .history-slider__slide
+
+            .history-card
+                opacity: 1

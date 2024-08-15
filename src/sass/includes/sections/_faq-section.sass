@@ -1,0 +1,29 @@
+.faq-section
+    padding: 50px 0
+
+    @media ($max-md)
+        padding: 20px 0
+
+    &__caption
+        margin-bottom: 20px
+    
+    &__list
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 20px 30px
+        margin: 0
+        padding: 0
+        list-style: none
+
+        @media ($max-md)
+            display: flex
+            flex-direction: column
+            gap: 10px
+
+    &__item
+        display: flex
+        flex-direction: column
+        gap: 20px
+
+        @media ($max-md)
+            gap: 10px

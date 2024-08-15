@@ -1,0 +1,62 @@
+.header
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    padding: 15px 0
+    z-index: $z-index-3
+    background: var(--white)
+    transition: box-shadow .5s ease, padding .5s ease, background .5s ease
+
+    @media ($max-md)
+        padding: 10px 0
+
+    &.is-scroll
+        box-shadow: 0 0 0 1px var(--black)
+
+    &.is-active
+        box-shadow: 0 0 0 1px var(--black)
+
+    &__container
+        display: flex
+        align-items: center
+        gap: 40px
+
+        @media ($max-xxl)
+            gap: 20px
+
+        @media ($max-lg)
+            gap: 10px
+        
+        @media ($max-md)
+            gap: 6px
+
+    &__logo
+
+        @media ($max-lg)
+            margin-right: auto
+
+        .logo__img
+            
+            @media ($max-lg)
+                height: 50px
+                width: auto
+
+            @media ($max-md)
+                height: 35px
+
+    &__menu
+        margin: 0 auto
+
+        @media ($max-lg)
+            display: none
+
+    &__nav-toggle
+
+        @media ($min-lg)
+            display: none
+
+    &__button
+
+        @media ($max-xxl)
+            display: none

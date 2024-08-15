@@ -1,0 +1,40 @@
+.burger
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    line-height: 1
+    gap: 6px
+
+    @media ($max-md)
+        gap: 4px
+
+    &.is-active
+
+        .burger__line
+
+            &:nth-child(1)
+                transform: rotate(45deg) translate(6px, 6px)
+
+                @media ($max-md)
+                    transform: rotate(45deg) translate(4px, 4px)
+
+            &:nth-child(2)
+                opacity: 0
+
+            &:nth-child(3)
+                transform: rotate(-45deg) translate(5px, -5px)
+
+                @media ($max-md)
+                    transform: rotate(-45deg) translate(3px, -3px)
+
+    &__line
+        width: 24px
+        height: 2px
+        border-radius: 2px
+        background: var(--black)
+        transition: all .5s ease
+
+        @media ($max-md)
+            width: 14px
+            height: 1px

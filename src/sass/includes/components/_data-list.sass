@@ -1,0 +1,25 @@
+.data-list
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 10px 30px
+    margin: 0
+    padding: 0
+    list-style: none
+
+    @media ($max-lg)
+        display: flex
+        flex-direction: column
+
+    &__item
+        display: flex
+        align-items: center
+        justify-content: space-between
+        gap: 5px
+        padding: 15px
+        background: var(--green-medium)
+        border: 1px solid rgba(255, 255, 255, .15)
+        border-radius: 10px
+        line-height: 1.25
+
+        @media ($max-md)
+            font-size: 14px

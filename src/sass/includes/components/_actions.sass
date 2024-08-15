@@ -1,0 +1,109 @@
+.actions
+
+    &__list
+        display: flex
+        gap: 10px
+        margin: 0
+        padding: 0
+        list-style: none
+
+        @media ($max-md)
+            gap: 6px
+    
+    &__item
+        position: relative
+
+        &--visible-lg
+            
+            @media ($min-lg)
+                display: none
+
+    &__button
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 50px
+        height: 50px
+        min-width: 50px
+        padding: 4px
+        color: var(--black)
+        background: var(--yellow)
+        border-radius: 10px
+
+        @media ($max-md)
+            width: 35px
+            height: 35px
+            min-width: 35px
+
+        &[aria-expanded="true"]
+            background: var(--yellow-dark)
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .08), 0 0 4px 0 rgba(0, 0, 0, .04)
+    
+    &__icon
+
+        @media ($max-md)
+            width: 14px
+            height: 14px
+            
+    &__dropdown
+
+        &-list
+            position: absolute
+            top: calc(100% + 20px)
+            left: 50%
+            margin: 0
+            padding: 4px 20px
+            min-height: 56px
+            display: flex
+            flex-direction: column
+            justify-content: center
+            list-style: none
+            background: var(--white)
+            border: 3px solid var(--yellow)
+            border-radius: 10px
+            opacity: 0
+            visibility: hidden
+            transform: translateX(-50%) translateY(10px)
+            transition: opacity .25s ease, visibility .25s ease, transform .25s ease
+
+            @media ($max-xxl)
+                left: auto
+                right: 0
+                transform: translateY(10px)
+            
+            @media ($max-md)
+                top: calc(100% + 10px)
+                padding: 4px 8px
+                border-width: 2px
+                min-height: 48px
+
+            &[aria-hidden="false"]
+                opacity: 1
+                visibility: visible
+                transform: translateX(-50%) translateY(0)
+
+                @media ($max-xxl)
+                    transform: translateY(0)
+        
+        &-item
+            text-align: center
+            font-weight: 700
+            line-height: 1.2
+            color: var(--black)
+            white-space: nowrap
+
+            @media ($max-md)
+                font-size: 14px
+                font-weight: 600
+
+            &:not(:last-child)
+                margin-bottom: 6px
+        
+        &-link
+            color: var(--black)
+            transition: color .5s ease
+
+            &:hover,
+            &:active,
+            &:focus-visible
+                color: var(--yellow)

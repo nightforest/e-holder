@@ -1,0 +1,113 @@
+.accordion
+
+    &__list
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        gap: 20px 0
+        margin: 0 -15px
+        padding: 0
+        list-style: none
+
+        @media ($max-lg)
+            flex-direction: column
+            margin: 0
+
+        @media ($max-md)
+            gap: 15px
+
+    &__item
+        flex: 0 0 50%
+        max-width: 50%
+        padding: 0 15px
+
+        @media ($max-lg)
+            flex: 0 0 100%
+            max-width: 100%
+            padding: 0
+
+    &__panel
+        border: 1px solid #ccc
+        border-radius: 15px
+        transition: all .5s ease
+
+        &:has(.accordion__trigger[aria-expanded="true"])
+            border-color: #F5F5F5
+            background: var(--white)
+            box-shadow: 8px -1px 18px 0 rgba(0, 0, 0, .1)
+        
+        &:not(:last-child)
+            margin-bottom: 20px
+
+            @media ($max-md)
+                margin-bottom: 15px
+
+    &__header
+        margin: 0
+
+    &__trigger
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: space-between
+        text-align: left
+        gap: 15px
+        width: 100%
+        padding: 10px 20px
+        min-height: 80px
+        font-size: 18px
+        font-weight: 500
+        line-height: 1.44
+        color: var(--black)
+        transition: color .5s ease
+
+        @media ($max-md)
+            min-height: 60px
+            font-size: 14px
+            line-height: 1.25
+
+        &[aria-expanded="true"]
+
+            .accordion__icon
+                transform: rotateX(180deg)
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            color: #B08831
+
+    &__icon
+        transition: transform .5s ease
+        min-width: 17px
+
+        @media ($max-md)
+            width: 13px
+            min-width: 13px
+            height: 7px
+
+    &__content
+        display: grid
+        grid-template-rows: 0fr
+        transition: grid-template-rows .5s, background-color .5s ease
+
+        &[aria-hidden="false"]
+            grid-template-rows: 1fr
+
+        .accordion__trigger
+            font-size: 20px
+
+    &__inner
+        overflow: hidden
+
+    &__text
+        font-size: 16px
+        padding: 0 20px 20px
+        color: var(--black)
+
+        @media ($max-md)
+            font-size: 14px
+
+        p
+
+            &:not(:last-child)
+                margin-bottom: 1rem

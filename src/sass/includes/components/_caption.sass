@@ -1,0 +1,79 @@
+.caption
+    --color: var(--white)
+
+    &__inner
+        position: relative
+        display: inline-block
+        white-space: nowrap
+
+        @media ($max-md)
+            margin-right: 65px
+            white-space: normal
+
+        &:before
+            position: absolute
+            top: 50%
+            left: calc(100% + 15px) 
+            width: 100px
+            height: 1px
+            background: var(--yellow)
+            transform: scaleX(0)
+            transition: transform .5s ease 1s
+            transform-origin: left center
+            content: ""
+
+            @media ($max-md)
+                width: 50px
+
+    &__bg-text
+        position: absolute
+        right: 0.2em
+        top: -0.58em
+        font-size: clamp(34px, 4.5vw, 56px)
+        color: transparent
+        -webkit-text-fill-color: transparent
+        -webkit-text-stroke: 1px var(--color)
+        font-weight: 900
+        opacity: 0
+        transform: translateY(20px) skewX(10deg)
+        transition: opacity 1s ease, transform 1s ease
+
+        @media ($max-md)
+            display: none
+        
+    &__title
+        font-size: clamp(24px, 4vw, 48px)
+        font-weight: 900
+        color: var(--color)
+        opacity: 0
+        transform: translateY(20px) skewX(10deg)
+        transition: opacity 1s ease .5s, transform 1s ease .5s
+    
+    &__descr
+        font-size: clamp(14px, 2.5vw, 24px)
+        color: var(--color)
+        opacity: 0
+        transform: translateY(20px) skewX(10deg)
+        transition: opacity 1s ease 1s, transform 1s ease 1s
+
+    &.is-animated
+
+        .caption__bg-text
+            transform: translateY(0) skewX(0)
+            opacity: .1
+
+        .caption__title
+            transform: translateY(0) skewX(0)
+            opacity: 1
+
+        .caption__descr
+            transform: translateY(0) skewX(0)
+            opacity: .5
+
+        .caption__inner
+
+            &:before
+                transform: scaleX(1)
+    
+    &--black
+        --color: var(--black)

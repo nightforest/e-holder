@@ -1,0 +1,96 @@
+header.header
+    .container.container--fluid.header__container
+        .logo.header__logo
+            a.logo__link(href="#" aria-label="logo")
+                img.logo__img(src="img/logo.svg" width="145" height="101" loading="lazy" alt="logo")
+
+        nav.menu.header__menu
+            ul.menu__list
+                li.menu__item
+                    a.menu__link.is-active(href="#") Головна
+                
+                li.menu__item
+                    a.menu__link(href="#" data-toggle="menu-1" aria-expanded="false") Послуги
+                        svg.menu__arrow(width="14" height="7")
+                            use(xlink:href="img/sprite.svg#dropdown-arrow")
+
+                    ul#menu-1.menu__dropdown-list(aria-hidden="true")
+                        li.menu__dropdown-item
+                            a.menu__dropdown-link.is-active(href="#") Продаж обладнення
+                        
+                        li.menu__dropdown-item
+                            a.menu__dropdown-link(href="#") Встановлення обладнення
+                        
+                        li.menu__dropdown-item
+                            a.menu__dropdown-link(href="#") Обслуговування обладнення
+                        
+                        li.menu__dropdown-item
+                            a.menu__dropdown-link(href="#") Підтримка наших клієнтів
+
+                li.menu__item
+                    a.menu__link(href="#") Продукція
+                
+                li.menu__item
+                    a.menu__link(href="#") Про компанію
+                
+                li.menu__item
+                    a.menu__link(href="#") Контакти
+
+        .lang.header__lang
+            .lang__inner
+                button.lang__toggle(type="button" aria-label="Choose a language" data-toggle="lang-dropdown" aria-expanded="false") UA
+                    svg.lang__toggle-arrow(width="14" height="7")
+                        use(xlink:href="img/sprite.svg#dropdown-arrow")
+
+                .lang__dropdown#lang-dropdown(aria-hidden="true")
+                    ul.lang__list
+                        li.lang__item
+                            a.lang__link(href="#") EN
+
+        .actions.header__actions
+            ul.actions__list
+                li.actions__item
+                    button.button.actions__button(type="button" data-toggle="actions-1" aria-expanded="false" aria-label="Email")
+                        svg.actions__icon(width="20" height="16")
+                            use(xlink:href="img/sprite.svg#email")
+
+                    ul#actions-1.actions__dropdown-list(aria-hidden="true")
+                        li.actions__dropdown-item
+                            a.actions__dropdown-link(href="mailto:info@e-holder.com") info@e-holder.com
+                        
+                li.actions__item
+                    button.button.actions__button(type="button" data-toggle="actions-2" aria-expanded="false" aria-label="Phone")
+                        svg.actions__icon(width="20" height="20")
+                            use(xlink:href="img/sprite.svg#phone")
+
+                    ul#actions-2.actions__dropdown-list(aria-hidden="true")
+                        li.actions__dropdown-item
+                            a.actions__dropdown-link(href="tel:+380111111111") + 38 (011)-11-11- 111
+                
+                li.actions__item
+                    button.button.actions__button(type="button" data-toggle="actions-3" aria-expanded="false" aria-label="Work time")
+                        svg.actions__icon(width="20" height="20")
+                            use(xlink:href="img/sprite.svg#time")
+
+                    ul#actions-3.actions__dropdown-list(aria-hidden="true")
+                        li.actions__dropdown-item
+                            p Понеділок - П'ятниця: 9:00-18:00 
+                            p Субота - Неділя: вихідний
+                
+                li.actions__item
+                    button.button.actions__button(type="button" data-toggle="actions-4" aria-expanded="false" aria-label="Location")
+                        svg.actions__icon(width="16" height="20")
+                            use(xlink:href="img/sprite.svg#location")
+
+                    ul#actions-4.actions__dropdown-list(aria-hidden="true")
+                        li.actions__dropdown-item
+                            p 716/24 Rybná, Prague 1, 
+                            p post code: 11000, Czechia
+
+                li.actions__item.actions__item--visible-lg
+                    button.button.burger.actions__button(type="button" aria-expanded="false" data-nav-toggle aria-label="Mobile menu")
+                        span.burger__line
+                        span.burger__line
+                        span.burger__line
+
+        button.button.header__button(type="button" data-modal="modal-callback") Залишити заявку

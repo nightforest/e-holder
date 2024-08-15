@@ -1,0 +1,82 @@
+.modal
+    position: absolute
+    top: 0
+    left: 0
+    z-index: $z-index-3
+    width: 100%
+    height: 100dvh
+    overflow-x: hidden
+    overflow-y: auto
+    outline: 0
+    opacity: 0
+    visibility: hidden
+    transition: opacity .5s ease, visibility .5s ease
+
+    &.is-visible
+        opacity: 1
+        visibility: visible
+
+        .modal__window
+            transform: scale(1)
+
+    &-wrap
+        position: fixed
+        top: 0
+        left: 0
+        z-index: 1000
+        width: 100%
+        height: 100dvh
+        outline: 0
+        background: rgba(0, 0, 0, .8)
+        opacity: 0
+        visibility: hidden
+        transition: opacity .5s ease, visibility .5s ease
+
+        &.is-visible
+            opacity: 1
+            visibility: visible
+
+    &__inner
+        display: flex
+        align-items: center
+        justify-content: center
+        min-height: 100%
+        padding: 16px
+
+    &__window
+        position: relative
+        width: 100%
+        max-width: 540px
+        padding: 55px 70px
+        border: 1px solid rgba(255, 255, 255, .15)
+        border-radius: 10px
+        background: rgba(255, 255, 255, .1)
+        backdrop-filter: blur(15px)
+        -webkit-backdrop-filter: blur(15px)
+        transform: scale(.8)
+        transition: transform .5s ease
+
+        @media ($max-sm)
+            padding: 30px 20px 20px
+
+    &__close
+        position: absolute
+        top: 15px
+        right: 15px
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 32px
+        height: 32px
+        font-size: 0
+        color: var(--yellow)
+        transition: color .5s ease
+
+        @media ($max-sm)
+            top: 6px
+            right: 6px
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            color: var(--white)

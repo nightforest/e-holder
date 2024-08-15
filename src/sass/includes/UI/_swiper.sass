@@ -1,0 +1,139 @@
+.swiper
+    --swiper-pagination-bullet-horizontal-gap: 6px
+    --swiper-pagination-bottom: 0px
+    --swiper-scrollbar-sides-offset: 0px
+    --swiper-scrollbar-bottom: 0
+    --swiper-scrollbar-size: 3px
+    --swiper-scrollbar-border-radius: 3px
+    --swiper-scrollbar-bg-color: rgba(255, 255, 255, .2)
+    --swiper-scrollbar-drag-bg-color: var(--yellow)
+
+    &-wrapper
+        box-sizing: border-box !important
+
+    &-slide
+        height: auto
+
+    &-scrollbar
+        cursor: pointer
+
+    &-pagination-fraction
+        left: 50%
+        bottom: 20px
+        margin-left: -57px
+        display: flex
+        align-items: center
+        justify-content: center
+        text-align: center
+        gap: 10px
+        width: 114px
+        height: 52px
+        border-radius: 10px
+        background: var(--white)
+        color: var(--grey)
+        font-size: 24px
+        font-weight: 500
+
+        @media ($max-md)
+            width: 80px
+            height: 30px
+            margin-left: -40px
+            font-size: 18px
+
+        .swiper-pagination-current
+            color: var(--black)
+
+    &-pagination
+        line-height: 1
+        font-size: 0
+        z-index: $z-index-0
+
+        &-bullet
+            width: 15px
+            height: 15px
+            border-radius: 50%
+            background: #2C2E2E
+            opacity: .3
+            transition: opacity .5s ease, background .5s ease
+
+            &:hover,
+            &:active,
+            &:focus-visible
+                opacity: .6
+                background: var(--green)
+
+            &-active
+                background: var(--green)
+                opacity: 1
+    
+    &-nav-prev,
+    &-nav-next
+        position: absolute
+        top: 50%
+        translate: 0 -50% 0
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 50px
+        height: 50px
+        padding: 0
+        background: var(--yellow)
+        color: var(--black)
+        border-radius: 10px
+        transition: color .5s ease, opacity .5s ease, visibility .5s ease, background .5s ease
+        z-index: $z-index-1
+        overflow: hidden
+        will-change: transform
+
+        &:after
+            content: ''
+            background: var(--yellow-dark)
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            border-radius: 50%
+            transform: translateY(-100%)
+            transition: transform .25s ease, border-radius .25s ease
+            z-index: -1
+
+        @media ($max-md)
+            width: 32px
+            height: 32px
+            border-radius: 6px
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            outline: none
+            color: var(--black)
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .08), 0 0 4px 0 rgba(0, 0, 0, .04)
+
+            &:after
+                transform: translateY(0)
+                border-radius: 0
+        
+        &.swiper-button-disabled,
+        &.swiper-button-lock
+            opacity: 0
+            visibility: hidden
+
+        &__icon
+
+            @media ($max-md)
+                width: 12px
+                height: 12px
+
+    &-nav-prev
+        left: -15px
+
+        @media ($max-md)
+            left: -10px
+
+    &-nav-next
+        right: -15px
+
+        @media ($max-md)
+            right: -10px
+            

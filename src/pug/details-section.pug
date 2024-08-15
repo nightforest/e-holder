@@ -1,0 +1,278 @@
+section.details-section
+    .container.details-section__container
+        header.section-header.details-section__header
+            nav.breadcrumbs.section-header__breadcrumbs.animation-down(aria-label="breadcrumb")
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Головна
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Каталог продукції
+                    li.breadcrumbs__item(aria-current="page") Назва продукту
+
+        .details-section__inner
+            .details-section__col.animation-fade
+                .details-section__label HIT
+                h1.details-section__title GENERATOR SET MODEL WPSP-33S
+                p.details-section__descr Standard Voltages 380 – 415 Volts 3 Phase 50/60HZ
+            
+            .details-section__col.animation-fade
+                .gallery.details-section__gallery
+                    .gallery-slider
+                        .swiper.gallery-slider__swiper
+                            .gallery-slider__label Hit
+
+                            .swiper-wrapper.gallery-slider__wrapper
+                                .swiper-slide.gallery-slider__slide
+                                    a.gallery-slider__link(href="img/gallery-img@2x.webp" data-pswp-width="700" data-pswp-height="670")
+                                        picture.gallery-slider__picture
+                                            img.gallery-slider__img(src="img/gallery-img.webp" srcset="img/gallery-img@2x.webp 2x" loading="lazy" width="350" height="335"  alt="alt")
+                                
+                                .swiper-slide.gallery-slider__slide
+                                    a.gallery-slider__link(href="img/gallery-img@2x.webp" data-pswp-width="700" data-pswp-height="670")
+                                        picture.gallery-slider__picture
+                                            img.gallery-slider__img(src="img/gallery-img.webp" srcset="img/gallery-img@2x.webp 2x" loading="lazy" width="350" height="335"  alt="alt")
+                                
+                                .swiper-slide.gallery-slider__slide
+                                    a.gallery-slider__link(href="img/gallery-img@2x.webp" data-pswp-width="700" data-pswp-height="670")
+                                        picture.gallery-slider__picture
+                                            img.gallery-slider__img(src="img/gallery-img.webp" srcset="img/gallery-img@2x.webp 2x" loading="lazy" width="350" height="335"  alt="alt")
+                                
+                                .swiper-slide.gallery-slider__slide
+                                    a.gallery-slider__link(href="img/gallery-img@2x.webp" data-pswp-width="700" data-pswp-height="670")
+                                        picture.gallery-slider__picture
+                                            img.gallery-slider__img(src="img/gallery-img.webp" srcset="img/gallery-img@2x.webp 2x" loading="lazy" width="350" height="335"  alt="alt")
+
+                                .swiper-slide.gallery-slider__slide
+                                    a.gallery-slider__link(href="img/gallery-img@2x.webp" data-pswp-width="700" data-pswp-height="670")
+                                        picture.gallery-slider__picture
+                                            img.gallery-slider__img(src="img/gallery-img.webp" srcset="img/gallery-img@2x.webp 2x" loading="lazy" width="350" height="335"  alt="alt")
+                            
+                        button.swiper-nav-prev.gallery-slider__prev(type="button" aria-label="Previous slide")
+                            svg.swiper-nav-prev__icon(width="11" height="17")
+                                use(xlink:href="img/sprite.svg#arrow-left")
+
+                        button.swiper-nav-next.gallery-slider__next(type="button" aria-label="Next slide")
+                            svg.swiper-nav-next__icon(width="11" height="17")
+                                use(xlink:href="img/sprite.svg#arrow-right")
+
+                    .gallery-thumbs
+                        .swiper.gallery-thumbs__swiper
+                            .swiper-wrapper.gallery-thumbs__wrapper
+                                .swiper-slide.gallery-thumbs__slide
+                                    picture.gallery-thumbs__picture
+                                        img.gallery-thumbs__img(src="img/gallery-thumb.webp" srcset="img/gallery-thumb@2x.webp 2x" loading="lazy" width="72" height="72" alt="alt")
+                                
+                                .swiper-slide.gallery-thumbs__slide
+                                    picture.gallery-thumbs__picture
+                                        img.gallery-thumbs__img(src="img/gallery-thumb.webp" srcset="img/gallery-thumb@2x.webp 2x" loading="lazy" width="72" height="72" alt="alt")
+                                
+                                .swiper-slide.gallery-thumbs__slide
+                                    picture.gallery-thumbs__picture
+                                        img.gallery-thumbs__img(src="img/gallery-thumb.webp" srcset="img/gallery-thumb@2x.webp 2x" loading="lazy" width="72" height="72" alt="alt")
+                                
+                                .swiper-slide.gallery-thumbs__slide
+                                    picture.gallery-thumbs__picture
+                                        img.gallery-thumbs__img(src="img/gallery-thumb.webp" srcset="img/gallery-thumb@2x.webp 2x" loading="lazy" width="72" height="72" alt="alt")
+                                
+                                .swiper-slide.gallery-thumbs__slide
+                                    picture.gallery-thumbs__picture
+                                        img.gallery-thumbs__img(src="img/gallery-thumb.webp" srcset="img/gallery-thumb@2x.webp 2x" loading="lazy" width="72" height="72" alt="alt")
+
+            .details-section__col.animation-fade
+                .details-section__status.details-section__status--green
+                    svg(width="19" height="15")
+                        use(xlink:href="img/sprite.svg#check")
+                    | Готово до відправки
+
+                .details-section__status.details-section__status--red
+                    svg(width="17" height="17")
+                        use(xlink:href="img/sprite.svg#cross")
+                    | Немає на складі
+                
+                button.button.details-section__button(type="button" data-modal="modal-callback") Залишити заявку
+
+        ul.tabs-nav.details-section__tabs-nav.animation-fade
+            li.tabs-nav__item
+                button.button.tabs-nav__button(type="button" id="tab-1" aria-selected="true" aria-controls="tabpanel-1" role="tab") 
+                    span 3 Phase Outputs
+
+            li.tabs-nav__item
+                button.button.tabs-nav__button(type="button" id="tab-2" aria-selected="false" aria-controls="tabpanel-2" role="tab")
+                    span Prime Power
+            
+            li.tabs-nav__item
+                button.button.tabs-nav__button(type="button" id="tab-3" aria-selected="false" aria-controls="tabpanel-3" role="tab")
+                    span Standby Power
+
+            li.tabs-nav__item
+                button.button.tabs-nav__button(type="button" id="tab-4" aria-selected="false" aria-controls="tabpanel-4" role="tab")
+                    span Technical Data (50HZ)
+            
+            li.tabs-nav__item
+                button.button.tabs-nav__button(type="button" id="tab-5" aria-selected="false" aria-controls="tabpanel-5" role="tab")
+                    span Standart Specification
+
+        .tabs-select.details-section__tabs-select.animation-fade
+            button.tabs-select__toggle(type="button" data-toggle="tabs-dropdown" aria-expanded="false")
+                span.tabs-select__toggle-title 3 Phase Outputs
+                svg.tabs-select__toggle-arrow(width="16" height="9")
+                    use(xlink:href="img/sprite.svg#dropdown-arrow")
+            
+            #tabs-dropdown.tabs-select__dropdown(aria-hidden="true")
+                ul.tabs-select__list
+                    li.tabs-select__item
+                        button.tabs-select__button(type="button" aria-selected="true" aria-controls="tabpanel-1" role="tab") 3 Phase Outputs
+                    
+                    li.tabs-select__item
+                        button.tabs-select__button(type="button" aria-selected="false" aria-controls="tabpanel-2" role="tab") Prime Power
+                    
+                    li.tabs-select__item
+                        button.tabs-select__button(type="button" aria-selected="false" aria-controls="tabpanel-3" role="tab") Standby Power
+                    
+                    li.tabs-select__item
+                        button.tabs-select__button(type="button" aria-selected="false" aria-controls="tabpanel-4" role="tab") Technical Data (50HZ)
+                    
+                    li.tabs-select__item
+                        button.tabs-select__button(type="button" aria-selected="false" aria-controls="tabpanel-5" role="tab") Standart Specification
+
+        .tabs-content.details-section__tabs-content.animation-fade
+            .tabs-panel(id="tabpanel-1" aria-hidden="false" aria-labelledby="tab-1" role="tabpanel")
+                table.table.details-section__table.hidden-lg
+                    tbody
+                        tr
+                            th.yellow-color(rowspan="2") RATING
+                            th(colspan='2') 50HZ
+                            th(colspan='2') 60HZ
+                        tr
+                            td.yellow-color.green-bg KVA
+                            td.yellow-color.green-bg KW
+                            td.yellow-color.green-bg KVA
+                            td.yellow-color.green-bg KW
+                        tr
+                            th.yellow-color STAND-BY
+                            td 33
+                            td 26
+                            td 39
+                            td 31
+                        tr
+                            th.yellow-color PRIME
+                            td.green-bg 33
+                            td.green-bg 24
+                            td.green-bg 35
+                            td.green-bg 28
+                
+                table.table.details-section__table.visible-lg
+                    tbody
+                        tr
+                            th.yellow-color(rowspan="2") RATING
+                            th(colspan='2') 50HZ
+                        tr
+                            td.yellow-color.green-bg KVA
+                            td.yellow-color.green-bg KW
+                        tr
+                            th.yellow-color STAND-BY
+                            td 33
+                            td 26
+                        tr
+                            th.yellow-color PRIME
+                            td.green-bg 33
+                            td.green-bg 24
+                
+                table.table.details-section__table.visible-lg
+                    tbody
+                        tr
+                            th.yellow-color(rowspan="2") RATING
+                            th(colspan='2') 60HZ
+                        tr
+                            td.yellow-color.green-bg KVA
+                            td.yellow-color.green-bg KW
+                        tr
+                            th.yellow-color STAND-BY
+                            td 39
+                            td 31
+                        tr
+                            th.yellow-color PRIME
+                            td.green-bg 35
+                            td.green-bg 28
+
+            .tabs-panel(id="tabpanel-2" aria-hidden="true" aria-labelledby="tab-2" role="tabpanel")
+                .details-section__text
+                    p These ratings are applicable for supplying continuous power (at variable load) in lieu of commercially purchased power. There is no limitation to the annual hours of operation and this model can supply 10% overload power for 1 hour in 12 hours.
+
+            .tabs-panel(id="tabpanel-3" aria-hidden="true" aria-labelledby="tab-3" role="tabpanel")
+                .details-section__text
+                    p These ratings are applicable for supplying continuous electrical power (at variable load) in the event of a utility power failure. No overload is permitted on these rating. When used at standby rating the alternator will be peak continuous rated (according to ISO3046)
+
+            .tabs-panel(id="tabpanel-4" aria-hidden="true" aria-labelledby="tab-4" role="tabpanel")
+                ul.data-list
+                    li.data-list__item
+                        span Engine model:
+                        span 1103A-33G
+
+                    li.data-list__item
+                        span Cooling system:
+                        span Water cooled
+                    
+                    li.data-list__item
+                        span Engine manufacturer:
+                        span Perkins
+                    
+                    li.data-list__item
+                        span Total coolant capacity:
+                        span (liters)
+                        span 10.2
+                    
+                    li.data-list__item
+                        span Emissions statement
+                        span Stage & Tier 4
+                    
+                    li.data-list__item
+                        span Total lubrication system capacity:
+                        span (liters)
+                        span 8.3
+                    
+                    li.data-list__item
+                        span Number of cylinders:
+                        span 3
+                    
+                    li.data-list__item
+                        span Engine rotation (viewed facing flywheel):
+                        span Anti-clockwise
+
+            .tabs-panel(id="tabpanel-5" aria-hidden="true" aria-labelledby="tab-5" role="tabpanel")
+                ul.spec-list
+                    li.spec-list__item
+                        h3 1. ENGINE
+                        p Perkins heavy duty diesel engine.
+                    
+                    li.spec-list__item
+                        h3 1.1Governor
+                        p Mechanical, compliance with ISO8528, Class G2.
+                    
+                    li.spec-list__item
+                        h3 2. COOLING RADIATOR
+                        p Radiator and cooling fan complete with protection guards, designed to cool the engine in ambient temperatures up to 50° C. The radiator is mounted on the base frame to avoid vibrations coming from the engine.
+                    
+                    li.spec-list__item
+                        h3 3. FILTRATION SYSTEM
+                        p Cartridge type air filter with security element. Cartridge fuel filter and full lube oil filter. All filters have replaceable elements.
+                    
+                    li.spec-list__item
+                        h3 4. EXHAUST SYSTEM
+                        p Heavy-duty industrial silencer.
+
+                    li.spec-list__item
+                        h3 5. ELECTRICAL SYSTEM
+                        p 12 Volt DC system with battery charging alternator, Starter motor, High-capacity maintenance free lead acid battery, battery rack mounted on the generating set base frame, and heavy-duty interconnecting cables with terminations.
+                    
+                    li.spec-list__item
+                        h3 6. ALTERNATOR
+                        p Screen protected and drip-proof, self-exciting, self-regulating brush-less alternator. Four poles, STAR winding connection, suitable for tropical, humid and saline climates. H class insulation IP23
+                    
+                    li.spec-list__item
+                        h3 7. AUTOMATIC VOLTAGE REGULATOR
+                        p Static electronic design voltage regulator. Steady voltage precision within + 1 % from no load to full load including cold and hot variations, at any Power factor between 0.8 and unity.
+        
+        .details-section__info.animation-fade
+            p Ratings at 0.8 pf - Generator designed to operate in ambient temperatures up to 50 °C
+            p Standard Voltages 380 – 415 Volts 3 Phase 50HZ

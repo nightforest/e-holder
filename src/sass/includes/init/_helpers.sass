@@ -1,0 +1,63 @@
+.visually-hidden
+    position: absolute !important
+    width: 1px !important
+    height: 1px !important
+    margin: -1px !important
+    border: 0 !important
+    padding: 0 !important
+    white-space: nowrap !important
+    clip-path: inset(100%) !important
+    clip: rect(0 0 0 0) !important
+    overflow: hidden !important
+
+.scroll-disabled
+    overflow-y: hidden
+
+.container
+    width: 100%
+    margin: 0 auto
+    padding: 0 15px
+
+    @media ($min-sm)
+        max-width: 100%
+
+    @media ($min-md)
+        max-width: 768px
+
+    @media ($min-lg)
+        max-width: 968px
+
+    @media ($min-xl)
+        max-width: 1140px
+
+    &--fluid
+        max-width: 1920px
+
+        @media ($min-lg)
+            padding: 0 30px
+
+.main
+    padding-top: var(--header-height)
+    flex: 1
+    overflow: hidden
+
+    &--center
+        display: flex
+        align-items: center
+        width: 100%
+
+    &--index
+        padding-top: 0
+
+.yellow-color
+    color: var(--yellow)
+
+.hidden-lg
+
+    @media ($max-lg)
+        display: none
+
+.visible-lg
+
+    @media ($min-lg)
+        display: none
