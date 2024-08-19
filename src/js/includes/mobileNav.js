@@ -1,3 +1,6 @@
+import disableScroll from "./disableScroll";
+import enableScroll from "./enableScroll";
+
 const mobileNav = () => {
     const body = document.querySelector('body');
     const header = document.querySelector('.header');
@@ -29,14 +32,10 @@ const mobileNav = () => {
         mobileNavToggle?.classList.toggle('is-active');
 
         if (mobileNav.classList.contains('is-visible')) {
-            body.classList.add('scroll-disabled');
-            body.style.paddingRight = paddingRight + 'px';
-            header.style.paddingRight = paddingRight + 'px';
+            disableScroll();
         } else {
             setTimeout(() => {
-                body.classList.remove('scroll-disabled');
-                body.style.paddingRight = '0px';
-                header.style.paddingRight = '0px';
+                enableScroll();
             }, 500);
         }
     }

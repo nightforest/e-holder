@@ -19,6 +19,8 @@ import gallery from './includes/gallery.js';
 import callbackFormValidation from './includes/callbackFormValidation.js';
 import documentsSlider from './includes/documentsSlider.js';
 import historySlider from './includes/historySlider.js';
+import scrollToId from './includes/scrollToId.js';
+import AirDatepicker from './includes/airDatepicker.js';
 import '../sass/main.sass';
 
 
@@ -43,4 +45,6 @@ gallery();
 callbackFormValidation();
 documentsSlider();
 historySlider();
+scrollToId();
+AirDatepicker();
 

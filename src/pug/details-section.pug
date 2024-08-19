@@ -10,12 +10,12 @@ section.details-section
                     li.breadcrumbs__item(aria-current="page") Назва продукту
 
         .details-section__inner
-            .details-section__col.animation-fade
+            .details-section__col
                 .details-section__label HIT
                 h1.details-section__title GENERATOR SET MODEL WPSP-33S
                 p.details-section__descr Standard Voltages 380 – 415 Volts 3 Phase 50/60HZ
             
-            .details-section__col.animation-fade
+            .details-section__col
                 .gallery.details-section__gallery
                     .gallery-slider
                         .swiper.gallery-slider__swiper
@@ -78,7 +78,7 @@ section.details-section
                                     picture.gallery-thumbs__picture
                                         img.gallery-thumbs__img(src="img/gallery-thumb.webp" srcset="img/gallery-thumb@2x.webp 2x" loading="lazy" width="72" height="72" alt="alt")
 
-            .details-section__col.animation-fade
+            .details-section__col
                 .details-section__status.details-section__status--green
                     svg(width="19" height="15")
                         use(xlink:href="img/sprite.svg#check")
@@ -91,7 +91,7 @@ section.details-section
                 
                 button.button.details-section__button(type="button" data-modal="modal-callback") Залишити заявку
 
-        ul.tabs-nav.details-section__tabs-nav.animation-fade
+        ul.tabs-nav.details-section__tabs-nav
             li.tabs-nav__item
                 button.button.tabs-nav__button(type="button" id="tab-1" aria-selected="true" aria-controls="tabpanel-1" role="tab") 
                     span 3 Phase Outputs
@@ -112,7 +112,7 @@ section.details-section
                 button.button.tabs-nav__button(type="button" id="tab-5" aria-selected="false" aria-controls="tabpanel-5" role="tab")
                     span Standart Specification
 
-        .tabs-select.details-section__tabs-select.animation-fade
+        .tabs-select.details-section__tabs-select
             button.tabs-select__toggle(type="button" data-toggle="tabs-dropdown" aria-expanded="false")
                 span.tabs-select__toggle-title 3 Phase Outputs
                 svg.tabs-select__toggle-arrow(width="16" height="9")
@@ -135,7 +135,7 @@ section.details-section
                     li.tabs-select__item
                         button.tabs-select__button(type="button" aria-selected="false" aria-controls="tabpanel-5" role="tab") Standart Specification
 
-        .tabs-content.details-section__tabs-content.animation-fade
+        .tabs-content.details-section__tabs-content
             .tabs-panel(id="tabpanel-1" aria-hidden="false" aria-labelledby="tab-1" role="tabpanel")
                 table.table.details-section__table.hidden-lg
                     tbody

@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <!--base(href="/")-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+        <!-- Title -->
+        <title>Details Page</title>
+        <!-- SEO Meta -->
+        <meta name="description" content="Description">
+        <meta name="keywords" content="keyword">
+        <!-- Favicon -->
+        <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+      <script type="module" crossorigin src="/assets/main-bf6b2327.js"></script>
+      <link rel="stylesheet" href="/assets/main-68e4bfde.css">
+    </head>
+    <body>
+        <!-- Preloader -->
+        
+<div class="preloader"><img class="preloader__img" src="img/logo.svg" width="145" height="101" alt="logo"/></div>
+
+        <!-- Header -->
+        
+<header class="header">
+  <div class="container container--fluid header__container">
+    <div class="logo header__logo"><a class="logo__link" href="#" aria-label="logo"><img class="logo__img" src="img/logo.svg" width="145" height="101" loading="lazy" alt="logo"/></a></div>
+    <nav class="menu header__menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a class="menu__link is-active" href="#">Головна</a></li>
+        <li class="menu__item"><a class="menu__link" href="#" data-toggle="menu-1" aria-expanded="false">Послуги
+            <svg class="menu__arrow" width="14" height="7">
+              <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+            </svg></a>
+          <ul class="menu__dropdown-list" id="menu-1" aria-hidden="true">
+            <li class="menu__dropdown-item"><a class="menu__dropdown-link is-active" href="#">Продаж обладнення</a></li>
+            <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Встановлення обладнення</a></li>
+            <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Обслуговування обладнення</a></li>
+            <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Підтримка наших клієнтів</a></li>
+          </ul>
+        </li>
+        <li class="menu__item"><a class="menu__link" href="#">Продукція</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Про компанію</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Контакти</a></li>
+      </ul>
+    </nav>
+    <div class="lang header__lang">
+      <div class="lang__inner">
+        <button class="lang__toggle" type="button" aria-label="Choose a language" data-toggle="lang-dropdown" aria-expanded="false">UA
+          <svg class="lang__toggle-arrow" width="14" height="7">
+            <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+          </svg>
+        </button>
+        <div class="lang__dropdown" id="lang-dropdown" aria-hidden="true">
+          <ul class="lang__list">
+            <li class="lang__item"><a class="lang__link" href="#">EN</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="actions header__actions">
+      <ul class="actions__list">
+        <li class="actions__item">
+          <button class="button actions__button" type="button" data-toggle="actions-1" aria-expanded="false" aria-label="Email">
+            <svg class="actions__icon" width="20" height="16">
+              <use xlink:href="img/sprite.svg#email"></use>
+            </svg>
+          </button>
+          <ul class="actions__dropdown-list" id="actions-1" aria-hidden="true">
+            <li class="actions__dropdown-item"><a class="actions__dropdown-link" href="mailto:info@e-holder.com">info@e-holder.com</a></li>
+          </ul>
+        </li>
+        <li class="actions__item">
+          <button class="button actions__button" type="button" data-toggle="actions-2" aria-expanded="false" aria-label="Phone">
+            <svg class="actions__icon" width="20" height="20">
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+          </button>
+          <ul class="actions__dropdown-list" id="actions-2" aria-hidden="true">
+            <li class="actions__dropdown-item"><a class="actions__dropdown-link" href="tel:+380111111111">+ 38 (011)-11-11- 111</a></li>
+          </ul>
+        </li>
+        <li class="actions__item">
+          <button class="button actions__button" type="button" data-toggle="actions-3" aria-expanded="false" aria-label="Work time">
+            <svg class="actions__icon" width="20" height="20">
+              <use xlink:href="img/sprite.svg#time"></use>
+            </svg>
+          </button>
+          <ul class="actions__dropdown-list" id="actions-3" aria-hidden="true">
+            <li class="actions__dropdown-item">
+              <p>Понеділок - П'ятниця: 9:00-18:00 </p>
+              <p>Субота - Неділя: вихідний</p>
+            </li>
+          </ul>
+        </li>
+        <li class="actions__item">
+          <button class="button actions__button" type="button" data-toggle="actions-4" aria-expanded="false" aria-label="Location">
+            <svg class="actions__icon" width="16" height="20">
+              <use xlink:href="img/sprite.svg#location"></use>
+            </svg>
+          </button>
+          <ul class="actions__dropdown-list" id="actions-4" aria-hidden="true">
+            <li class="actions__dropdown-item">
+              <p>716/24 Rybná, Prague 1, </p>
+              <p>post code: 11000, Czechia</p>
+            </li>
+          </ul>
+        </li>
+        <li class="actions__item actions__item--visible-lg">
+          <button class="button burger actions__button" type="button" aria-expanded="false" data-nav-toggle="data-nav-toggle" aria-label="Mobile menu"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></button>
+        </li>
+      </ul>
+    </div>
+    <button class="button header__button" type="button" data-modal="modal-callback">Залишити заявку</button>
+  </div>
+</header>
+
+        <!-- Main -->
+        <main id="main" class="main">
+            
+<section class="details-section">
+  <div class="container details-section__container">
+    <header class="section-header details-section__header">
+      <nav class="breadcrumbs section-header__breadcrumbs animation-down" aria-label="breadcrumb">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Головна</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог продукції</a></li>
+          <li class="breadcrumbs__item" aria-current="page">Назва продукту</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="details-section__inner">
+      <div class="details-section__col">
+        <div class="details-section__label">HIT</div>
+        <h1 class="details-section__title">GENERATOR SET MODEL WPSP-33S</h1>
+        <p class="details-section__descr">Standard Voltages 380 – 415 Volts 3 Phase 50/60HZ</p>
+      </div>
+      <div class="details-section__col">
+        <div class="gallery details-section__gallery">
+          <div class="gallery-slider">
+            <div class="swiper gallery-slider__swiper">
+              <div class="gallery-slider__label">Hit</div>
+              <div class="swiper-wrapper gallery-slider__wrapper">
+                <div class="swiper-slide gallery-slider__slide"><a class="gallery-slider__link" href="img/gallery-img@2x.webp" data-pswp-width="700" data-pswp-height="670">
+                    <picture class="gallery-slider__picture"><img class="gallery-slider__img" src="img/gallery-img.webp" srcset="img/gallery-img@2x.webp 2x" loading="lazy" width="350" height="335" alt="alt"/></picture></a></div>
+                <div class="swiper-slide gallery-slider__slide"><a class="gallery-slider__link" href="img/gallery-img@2x.webp" data-pswp-width="700" data-pswp-height="670">
+                    <picture class="gallery-slider__picture"><img class="gallery-slider__img" src="img/gallery-img.webp" srcset="img/gallery-img@2x.webp 2x" loading="lazy" width="350" height="335" alt="alt"/></picture></a></div>
+                <div class="swiper-slide gallery-slider__slide"><a class="gallery-slider__link" href="img/gallery-img@2x.webp" data-pswp-width="700" data-pswp-height="670">
+                    <picture class="gallery-slider__picture"><img class="gallery-slider__img" src="img/gallery-img.webp" srcset="img/gallery-img@2x.webp 2x" loading="lazy" width="350" height="335" alt="alt"/></picture></a></div>
+                <div class="swiper-slide gallery-slider__slide"><a class="gallery-slider__link" href="img/gallery-img@2x.webp" data-pswp-width="700" data-pswp-height="670">
+                    <picture class="gallery-slider__picture"><img class="gallery-slider__img" src="img/gallery-img.webp" srcset="img/gallery-img@2x.webp 2x" loading="lazy" width="350" height="335" alt="alt"/></picture></a></div>
+                <div class="swiper-slide gallery-slider__slide"><a class="gallery-slider__link" href="img/gallery-img@2x.webp" data-pswp-width="700" data-pswp-height="670">
+                    <picture class="gallery-slider__picture"><img class="gallery-slider__img" src="img/gallery-img.webp" srcset="img/gallery-img@2x.webp 2x" loading="lazy" width="350" height="335" alt="alt"/></picture></a></div>
+              </div>
+            </div>
+            <button class="swiper-nav-prev gallery-slider__prev" type="button" aria-label="Previous slide">
+              <svg class="swiper-nav-prev__icon" width="11" height="17">
+                <use xlink:href="img/sprite.svg#arrow-left"></use>
+              </svg>
+            </button>
+            <button class="swiper-nav-next gallery-slider__next" type="button" aria-label="Next slide">
+              <svg class="swiper-nav-next__icon" width="11" height="17">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="gallery-thumbs">
+            <div class="swiper gallery-thumbs__swiper">
+              <div class="swiper-wrapper gallery-thumbs__wrapper">
+                <div class="swiper-slide gallery-thumbs__slide">
+                  <picture class="gallery-thumbs__picture"><img class="gallery-thumbs__img" src="img/gallery-thumb.webp" srcset="img/gallery-thumb@2x.webp 2x" loading="lazy" width="72" height="72" alt="alt"/></picture>
+                </div>
+                <div class="swiper-slide gallery-thumbs__slide">
+                  <picture class="gallery-thumbs__picture"><img class="gallery-thumbs__img" src="img/gallery-thumb.webp" srcset="img/gallery-thumb@2x.webp 2x" loading="lazy" width="72" height="72" alt="alt"/></picture>
+                </div>
+                <div class="swiper-slide gallery-thumbs__slide">
+                  <picture class="gallery-thumbs__picture"><img class="gallery-thumbs__img" src="img/gallery-thumb.webp" srcset="img/gallery-thumb@2x.webp 2x" loading="lazy" width="72" height="72" alt="alt"/></picture>
+                </div>
+                <div class="swiper-slide gallery-thumbs__slide">
+                  <picture class="gallery-thumbs__picture"><img class="gallery-thumbs__img" src="img/gallery-thumb.webp" srcset="img/gallery-thumb@2x.webp 2x" loading="lazy" width="72" height="72" alt="alt"/></picture>
+                </div>
+                <div class="swiper-slide gallery-thumbs__slide">
+                  <picture class="gallery-thumbs__picture"><img class="gallery-thumbs__img" src="img/gallery-thumb.webp" srcset="img/gallery-thumb@2x.webp 2x" loading="lazy" width="72" height="72" alt="alt"/></picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="details-section__col">
+        <div class="details-section__status details-section__status--green">
+          <svg width="19" height="15">
+            <use xlink:href="img/sprite.svg#check"></use>
+          </svg>Готово до відправки
+        </div>
+        <div class="details-section__status details-section__status--red">
+          <svg width="17" height="17">
+            <use xlink:href="img/sprite.svg#cross"></use>
+          </svg>Немає на складі
+        </div>
+        <button class="button details-section__button" type="button" data-modal="modal-callback">Залишити заявку</button>
+      </div>
+    </div>
+    <ul class="tabs-nav details-section__tabs-nav">
+      <li class="tabs-nav__item">
+        <button class="button tabs-nav__button" type="button" id="tab-1" aria-selected="true" aria-controls="tabpanel-1" role="tab"> <span>3 Phase Outputs</span></button>
+      </li>
+      <li class="tabs-nav__item">
+        <button class="button tabs-nav__button" type="button" id="tab-2" aria-selected="false" aria-controls="tabpanel-2" role="tab"><span>Prime Power</span></button>
+      </li>
+      <li class="tabs-nav__item">
+        <button class="button tabs-nav__button" type="button" id="tab-3" aria-selected="false" aria-controls="tabpanel-3" role="tab"><span>Standby Power</span></button>
+      </li>
+      <li class="tabs-nav__item">
+        <button class="button tabs-nav__button" type="button" id="tab-4" aria-selected="false" aria-controls="tabpanel-4" role="tab"><span>Technical Data (50HZ)</span></button>
+      </li>
+      <li class="tabs-nav__item">
+        <button class="button tabs-nav__button" type="button" id="tab-5" aria-selected="false" aria-controls="tabpanel-5" role="tab"><span>Standart Specification</span></button>
+      </li>
+    </ul>
+    <div class="tabs-select details-section__tabs-select">
+      <button class="tabs-select__toggle" type="button" data-toggle="tabs-dropdown" aria-expanded="false"><span class="tabs-select__toggle-title">3 Phase Outputs</span>
+        <svg class="tabs-select__toggle-arrow" width="16" height="9">
+          <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+        </svg>
+      </button>
+      <div class="tabs-select__dropdown" id="tabs-dropdown" aria-hidden="true">
+        <ul class="tabs-select__list">
+          <li class="tabs-select__item">
+            <button class="tabs-select__button" type="button" aria-selected="true" aria-controls="tabpanel-1" role="tab">3 Phase Outputs</button>
+          </li>
+          <li class="tabs-select__item">
+            <button class="tabs-select__button" type="button" aria-selected="false" aria-controls="tabpanel-2" role="tab">Prime Power</button>
+          </li>
+          <li class="tabs-select__item">
+            <button class="tabs-select__button" type="button" aria-selected="false" aria-controls="tabpanel-3" role="tab">Standby Power</button>
+          </li>
+          <li class="tabs-select__item">
+            <button class="tabs-select__button" type="button" aria-selected="false" aria-controls="tabpanel-4" role="tab">Technical Data (50HZ)</button>
+          </li>
+          <li class="tabs-select__item">
+            <button class="tabs-select__button" type="button" aria-selected="false" aria-controls="tabpanel-5" role="tab">Standart Specification</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="tabs-content details-section__tabs-content">
+      <div class="tabs-panel" id="tabpanel-1" aria-hidden="false" aria-labelledby="tab-1" role="tabpanel">
+        <table class="table details-section__table hidden-lg">
+          <tbody>
+            <tr>
+              <th class="yellow-color" rowspan="2">RATING</th>
+              <th colspan="2">50HZ</th>
+              <th colspan="2">60HZ</th>
+            </tr>
+            <tr>
+              <td class="yellow-color green-bg">KVA</td>
+              <td class="yellow-color green-bg">KW</td>
+              <td class="yellow-color green-bg">KVA</td>
+              <td class="yellow-color green-bg">KW</td>
+            </tr>
+            <tr>
+              <th class="yellow-color">STAND-BY</th>
+              <td>33</td>
+              <td>26</td>
+              <td>39</td>
+              <td>31</td>
+            </tr>
+            <tr>
+              <th class="yellow-color">PRIME</th>
+              <td class="green-bg">33</td>
+              <td class="green-bg">24</td>
+              <td class="green-bg">35</td>
+              <td class="green-bg">28</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table details-section__table visible-lg">
+          <tbody>
+            <tr>
+              <th class="yellow-color" rowspan="2">RATING</th>
+              <th colspan="2">50HZ</th>
+            </tr>
+            <tr>
+              <td class="yellow-color green-bg">KVA</td>
+              <td class="yellow-color green-bg">KW</td>
+            </tr>
+            <tr>
+              <th class="yellow-color">STAND-BY</th>
+              <td>33</td>
+              <td>26</td>
+            </tr>
+            <tr>
+              <th class="yellow-color">PRIME</th>
+              <td class="green-bg">33</td>
+              <td class="green-bg">24</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table details-section__table visible-lg">
+          <tbody>
+            <tr>
+              <th class="yellow-color" rowspan="2">RATING</th>
+              <th colspan="2">60HZ</th>
+            </tr>
+            <tr>
+              <td class="yellow-color green-bg">KVA</td>
+              <td class="yellow-color green-bg">KW</td>
+            </tr>
+            <tr>
+              <th class="yellow-color">STAND-BY</th>
+              <td>39</td>
+              <td>31</td>
+            </tr>
+            <tr>
+              <th class="yellow-color">PRIME</th>
+              <td class="green-bg">35</td>
+              <td class="green-bg">28</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tabs-panel" id="tabpanel-2" aria-hidden="true" aria-labelledby="tab-2" role="tabpanel">
+        <div class="details-section__text">
+          <p>These ratings are applicable for supplying continuous power (at variable load) in lieu of commercially purchased power. There is no limitation to the annual hours of operation and this model can supply 10% overload power for 1 hour in 12 hours.</p>
+        </div>
+      </div>
+      <div class="tabs-panel" id="tabpanel-3" aria-hidden="true" aria-labelledby="tab-3" role="tabpanel">
+        <div class="details-section__text">
+          <p>These ratings are applicable for supplying continuous electrical power (at variable load) in the event of a utility power failure. No overload is permitted on these rating. When used at standby rating the alternator will be peak continuous rated (according to ISO3046)</p>
+        </div>
+      </div>
+      <div class="tabs-panel" id="tabpanel-4" aria-hidden="true" aria-labelledby="tab-4" role="tabpanel">
+        <ul class="data-list">
+          <li class="data-list__item"><span>Engine model:</span><span>1103A-33G</span></li>
+          <li class="data-list__item"><span>Cooling system:</span><span>Water cooled</span></li>
+          <li class="data-list__item"><span>Engine manufacturer:</span><span>Perkins</span></li>
+          <li class="data-list__item"><span>Total coolant capacity:</span><span>(liters)</span><span>10.2</span></li>
+          <li class="data-list__item"><span>Emissions statement</span><span>Stage & Tier 4</span></li>
+          <li class="data-list__item"><span>Total lubrication system capacity:</span><span>(liters)</span><span>8.3</span></li>
+          <li class="data-list__item"><span>Number of cylinders:</span><span>3</span></li>
+          <li class="data-list__item"><span>Engine rotation (viewed facing flywheel):</span><span>Anti-clockwise</span></li>
+        </ul>
+      </div>
+      <div class="tabs-panel" id="tabpanel-5" aria-hidden="true" aria-labelledby="tab-5" role="tabpanel">
+        <ul class="spec-list">
+          <li class="spec-list__item">
+            <h3>1. ENGINE</h3>
+            <p>Perkins heavy duty diesel engine.</p>
+          </li>
+          <li class="spec-list__item">
+            <h3>1.1Governor</h3>
+            <p>Mechanical, compliance with ISO8528, Class G2.</p>
+          </li>
+          <li class="spec-list__item">
+            <h3>2. COOLING RADIATOR</h3>
+            <p>Radiator and cooling fan complete with protection guards, designed to cool the engine in ambient temperatures up to 50° C. The radiator is mounted on the base frame to avoid vibrations coming from the engine.</p>
+          </li>
+          <li class="spec-list__item">
+            <h3>3. FILTRATION SYSTEM</h3>
+            <p>Cartridge type air filter with security element. Cartridge fuel filter and full lube oil filter. All filters have replaceable elements.</p>
+          </li>
+          <li class="spec-list__item">
+            <h3>4. EXHAUST SYSTEM</h3>
+            <p>Heavy-duty industrial silencer.</p>
+          </li>
+          <li class="spec-list__item">
+            <h3>5. ELECTRICAL SYSTEM</h3>
+            <p>12 Volt DC system with battery charging alternator, Starter motor, High-capacity maintenance free lead acid battery, battery rack mounted on the generating set base frame, and heavy-duty interconnecting cables with terminations.</p>
+          </li>
+          <li class="spec-list__item">
+            <h3>6. ALTERNATOR</h3>
+            <p>Screen protected and drip-proof, self-exciting, self-regulating brush-less alternator. Four poles, STAR winding connection, suitable for tropical, humid and saline climates. H class insulation IP23</p>
+          </li>
+          <li class="spec-list__item">
+            <h3>7. AUTOMATIC VOLTAGE REGULATOR</h3>
+            <p>Static electronic design voltage regulator. Steady voltage precision within + 1 % from no load to full load including cold and hot variations, at any Power factor between 0.8 and unity.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="details-section__info animation-fade">
+      <p>Ratings at 0.8 pf - Generator designed to operate in ambient temperatures up to 50 °C</p>
+      <p>Standard Voltages 380 – 415 Volts 3 Phase 50HZ</p>
+    </div>
+  </div>
+</section>
+            
+<section class="documents-section documents-section--white">
+  <div class="documents-section__inner">
+    <div class="container">
+      <div class="caption caption--black animation-title documents-section__caption">
+        <div class="caption__inner">
+          <div class="caption__bg-text">Сертифікати</div>
+          <h2 class="caption__title">Сертифікати</h2>
+        </div>
+      </div>
+      <div class="swiper documents-slider">
+        <div class="swiper-wrapper documents-slider__wrapper">
+          <div class="swiper-slide documents-slider__slide animation-fade" data-delay="0"><a class="documents-slider__link" href="img/documents/doc-1@2x.webp" data-pswp-width="696" data-pswp-height="974">
+              <picture class="documents-slider__picture"><img class="documents-slider__img" src="img/documents/doc-1.webp" srcset="img/documents/doc-1@2x.webp 2x" loading="lazy" width="348" height="487" alt="alt"/></picture></a></div>
+          <div class="swiper-slide documents-slider__slide animation-fade" data-delay="0.2"><a class="documents-slider__link" href="img/documents/doc-1@2x.webp" data-pswp-width="696" data-pswp-height="974">
+              <picture class="documents-slider__picture"><img class="documents-slider__img" src="img/documents/doc-1.webp" srcset="img/documents/doc-1@2x.webp 2x" loading="lazy" width="348" height="487" alt="alt"/></picture></a></div>
+          <div class="swiper-slide documents-slider__slide animation-fade" data-delay="0.4"><a class="documents-slider__link" href="img/documents/doc-1@2x.webp" data-pswp-width="696" data-pswp-height="974">
+              <picture class="documents-slider__picture"><img class="documents-slider__img" src="img/documents/doc-1.webp" srcset="img/documents/doc-1@2x.webp 2x" loading="lazy" width="348" height="487" alt="alt"/></picture></a></div>
+        </div>
+        <button class="swiper-nav-prev documents-slider__prev" type="button" aria-label="Previous slide">
+          <svg class="swiper-nav-prev__icon" width="11" height="17">
+            <use xlink:href="img/sprite.svg#arrow-left"></use>
+          </svg>
+        </button>
+        <button class="swiper-nav-next documents-slider__next" type="button" aria-label="Next slide">
+          <svg class="swiper-nav-next__icon" width="11" height="17">
+            <use xlink:href="img/sprite.svg#arrow-right"></use>
+          </svg>
+        </button>
+        <div class="swiper-scrollbar documents-slider__scrollbar"></div>
+      </div>
+    </div>
+  </div>
+</section>
+            
+<section class="products-section">
+  <div class="container">
+    <div class="caption animation-title products-section__caption">
+      <div class="caption__inner">
+        <div class="caption__bg-text">Вас може зацікавити</div>
+        <h2 class="caption__title">Вас може зацікавити</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container container--fluid">
+    <div class="swiper products-slider">
+      <div class="swiper-wrapper products-slider__wrapper">
+        <div class="swiper-slide products-slider__slide animation-fade" data-delay="0">
+          <article class="product-card"><a class="product-card__link" href="#"> 
+              <picture class="product-card__picture"><img class="product-card__img" src="img/product-img.webp" srcset="img/product-img@2x.webp 2x" loading="lazy" width="441" height="284" alt="alt"/></picture></a>
+            <div class="product-card__content">
+              <h3 class="product-card__title">WPSP-22S</h3>
+              <p class="product-card__descr">Standard Voltages 380 – 415 Volts 3 Phase 50/60HZ</p>
+              <div class="product-card__buttons"><a class="button product-card__button" href="#">Залишити заявку</a><a class="button button--white product-card__button" href="#">Детальніше</a></div>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide products-slider__slide animation-fade" data-delay="0.2">
+          <article class="product-card"><a class="product-card__link" href="#"> 
+              <picture class="product-card__picture"><img class="product-card__img" src="img/product-img.webp" srcset="img/product-img@2x.webp 2x" loading="lazy" width="441" height="284" alt="alt"/></picture></a>
+            <div class="product-card__content">
+              <h3 class="product-card__title">WPSP-22S</h3>
+              <p class="product-card__descr">Standard Voltages 380</p>
+              <div class="product-card__buttons"><a class="button product-card__button" href="#">Залишити заявку</a><a class="button button--white product-card__button" href="#">Детальніше</a></div>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide products-slider__slide animation-fade" data-delay="0.4">
+          <article class="product-card"><a class="product-card__link" href="#"> 
+              <picture class="product-card__picture"><img class="product-card__img" src="img/product-img.webp" srcset="img/product-img@2x.webp 2x" loading="lazy" width="441" height="284" alt="alt"/></picture></a>
+            <div class="product-card__content">
+              <h3 class="product-card__title">WPSP-22S</h3>
+              <p class="product-card__descr">Standard Voltages 380 – 415 Volts 3 Phase 50/60HZ</p>
+              <div class="product-card__buttons"><a class="button product-card__button" href="#">Залишити заявку</a><a class="button button--white product-card__button" href="#">Детальніше</a></div>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide products-slider__slide animation-fade" data-delay="0.6">
+          <article class="product-card"><a class="product-card__link" href="#"> 
+              <picture class="product-card__picture"><img class="product-card__img" src="img/product-img.webp" srcset="img/product-img@2x.webp 2x" loading="lazy" width="441" height="284" alt="alt"/></picture></a>
+            <div class="product-card__content">
+              <h3 class="product-card__title">WPSP-22S</h3>
+              <p class="product-card__descr">Standard Voltages 380 – 415 Volts 3 Phase 50/60HZ</p>
+              <div class="product-card__buttons"><a class="button product-card__button" href="#">Залишити заявку</a><a class="button button--white product-card__button" href="#">Детальніше</a></div>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide products-slider__slide animation-fade" data-delay="0">
+          <article class="product-card"><a class="product-card__link" href="#"> 
+              <picture class="product-card__picture"><img class="product-card__img" src="img/product-img.webp" srcset="img/product-img@2x.webp 2x" loading="lazy" width="441" height="284" alt="alt"/></picture></a>
+            <div class="product-card__content">
+              <h3 class="product-card__title">WPSP-22S</h3>
+              <p class="product-card__descr">Standard Voltages 380 – 415 Volts 3 Phase 50/60HZ</p>
+              <div class="product-card__buttons"><a class="button product-card__button" href="#">Залишити заявку</a><a class="button button--white product-card__button" href="#">Детальніше</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <button class="swiper-nav-prev products-slider__prev" type="button" aria-label="Previous slide">
+        <svg class="swiper-nav-prev__icon" width="11" height="17">
+          <use xlink:href="img/sprite.svg#arrow-left"></use>
+        </svg>
+      </button>
+      <button class="swiper-nav-next products-slider__next" type="button" aria-label="Next slide">
+        <svg class="swiper-nav-next__icon" width="11" height="17">
+          <use xlink:href="img/sprite.svg#arrow-right"></use>
+        </svg>
+      </button>
+      <div class="swiper-scrollbar products-slider__scrollbar"></div>
+    </div>
+  </div>
+</section>
+        </main>
+
+        <!-- Footer -->
+        
+<footer class="footer">
+  <div class="container container--fluid footer__container">
+    <div class="footer__row">
+      <div class="footer__col">
+        <div class="logo footer__logo"><a class="logo__link" href="#" aria-label="logo"><img class="logo__img" src="img/logo.svg" width="145" height="100" loading="lazy" alt="logo"/></a></div>
+        <address class="social footer__social">
+          <ul class="social__list">
+            <li class="social__item"><a class="button social__button" href="#" aria-label="Facebook">
+                <svg class="social__icon" width="12" height="22">
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg></a></li>
+            <li class="social__item"><a class="button social__button" href="#" aria-label="Instagram">
+                <svg class="social__icon" width="22" height="22">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg></a></li>
+            <li class="social__item"><a class="button social__button" href="#" aria-label="YouTube">
+                <svg class="social__icon" width="22" height="16">
+                  <use xlink:href="img/sprite.svg#youtube"></use>
+                </svg></a></li>
+          </ul>
+        </address>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title footer__title--hidden-md"><span>Меню</span></h3>
+        <nav class="footer-menu">
+          <button class="footer-menu__toggle" type="button" data-trigger="footer-menu-1" aria-expanded="true">Меню
+            <svg class="footer-menu__toggle-icon" width="15" height="9">
+              <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+            </svg>
+          </button>
+          <div class="footer-menu__inner" id="footer-menu-1" aria-hidden="false">
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Головна</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Послуги</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Продукція</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Про компанію</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Контакти</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Умови використання сайту</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Політика конфіденційності</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Права та обов'язки користувачів</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title footer__title--hidden-md"><span>Продукція</span></h3>
+        <nav class="footer-menu">
+          <button class="footer-menu__toggle" type="button" data-trigger="footer-menu-2" aria-expanded="true">Продукція
+            <svg class="footer-menu__toggle-icon" width="15" height="9">
+              <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+            </svg>
+          </button>
+          <div class="footer-menu__inner" id="footer-menu-2" aria-hidden="false">
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">WPSP-22S</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">WPSP-33S</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">WPSP-50S</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title footer__title--hidden-md"><span>Послуги</span></h3>
+        <nav class="footer-menu">
+          <button class="footer-menu__toggle" type="button" data-trigger="footer-menu-3" aria-expanded="true">Послуги
+            <svg class="footer-menu__toggle-icon" width="15" height="9">
+              <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+            </svg>
+          </button>
+          <div class="footer-menu__inner" id="footer-menu-3" aria-hidden="false">
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Продаж обладнання</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Встановлення обладнання</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Обслуговування обладнання</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Підтримка наших клієнтів</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title"><span>Контакти</span></h3>
+        <address class="contacts footer__contacts">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <svg class="contacts__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+              <div class="contacts__content"><a class="contacts__link" href="tel:+ 380111111111">+ 38 (011)-11-11-111</a></div>
+            </li>
+            <li class="contacts__item">
+              <svg class="contacts__icon" width="20" height="16">
+                <use xlink:href="img/sprite.svg#email"></use>
+              </svg>
+              <div class="contacts__content"><a class="contacts__link" href="mailto:info@e-holder.com">info@e-holder.com</a></div>
+            </li>
+            <li class="contacts__item">
+              <svg class="contacts__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#time"></use>
+              </svg>
+              <div class="contacts__content">
+                <p class="contacts__text">Понеділок - П'ятниця: 9:00-18:00 Субота - Неділя: вихідний</p>
+              </div>
+            </li>
+            <li class="contacts__item">
+              <svg class="contacts__icon" width="16" height="20">
+                <use xlink:href="img/sprite.svg#location"></use>
+              </svg>
+              <div class="contacts__content">
+                <p class="contacts__text">716/24 Rybná, Prague 1, post code: 11000, Czechia</p>
+              </div>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__copyright">&copy; E-holder 2024 Всі права захищені.</div>
+      <div class="footer__dev">Розроблено<a class="footer__dev-link" href="https://shafem.com/" aria-label="Developer link" target="_blank"><img class="footer__dev-img" src="img/shafem.svg" width="103" height="22" loading="lazy" alt="shafem"/></a></div>
+    </div>
+  </div><a class="button up-button" href="#main" data-scroll="data-scroll" aria-label="Scroll to top">
+    <svg class="button__icon" width="19" height="11">
+      <use xlink:href="img/sprite.svg#up-arrow"></use>
+    </svg></a>
+</footer>
+
+        <!-- Mobile Nav -->
+        
+<div class="mobile-nav">
+  <div class="mobile-nav__sidebar">
+    <div class="mobile-nav__inner">
+      <nav class="mobile-nav-menu">
+        <ul class="mobile-nav-menu__list">
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Головна</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Послуги</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Продукція</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Про компанію</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-nav__bottom">
+        <button class="button mobile-nav__button" type="button" data-modal="modal-callback">Залишити заявку</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <!-- Modals -->
+        
+<div class="modal-wrap">
+  <div class="modal" id="modal-callback">
+    <div class="modal__inner">
+      <div class="modal__window">
+        <button class="modal__close" aria-label="Close modal" data-modal-close="data-modal-close" type="button">
+          <svg class="modal__close-icon" width="20" height="20">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal__content">
+          <form class="form modal__form" id="callback-form" autocomplete="off" novalidate="novalidate">
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Залишити заявку</legend>
+              <div class="form__group">
+                <input class="input form__input" id="callbackInputName" type="text" name="callbackInputName" placeholder="Ім'я *" data-error-message="Введіть імʼя" autocomplete="off" required="required"/>
+              </div>
+              <div class="form__group">
+                <input class="input form__input tell-input" id="callbackInputPhone" type="tel" name="callbackInputPhone" data-error-message="Введіть телефон" autocomplete="off" required="required"/>
+              </div>
+              <div class="form__group">
+                <input class="input form__input" id="callbackInputEmail" type="email" name="callbackInputEmail" placeholder="Пошта *" data-error-message="Введіть email" autocomplete="off" required="required"/>
+              </div>
+              <div class="form__group">
+                <textarea class="textarea form__input" id="callbackTextarea" name="callbackTextarea" rows="4" placeholder="Коментар" autocomplete="off"></textarea>
+              </div>
+              <div class="form__group">
+                <input class="input form__input date-input" id="callbackInputTime" type="text" name="callbackInputTime" placeholder="Бажаний час (9:00 - 18:00, кожні пів години)" autocomplete="off"/>
+              </div>
+              <div class="form__group form__group--center">
+                <div class="checkbox">
+                  <input class="checkbox__input" id="callbackAgree" type="checkbox" name="callbackAgree" value="true" required="required"/>
+                  <label class="checkbox__label" for="callbackAgree">Погоджуюсь з <a class="checkbox__link" href="#">Політикою конфіденційності</a> та <a class="checkbox__link" href="#">Умовами використання сайту</a></label>
+                </div>
+              </div>
+              <div class="form__group form__group--center">
+                <button class="button form__button">Відправити</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+    </body>
+</html>

@@ -1,6 +1,7 @@
-import Swiper, { Scrollbar } from 'swiper';
+import Swiper, { Scrollbar, Navigation } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/scrollbar';
+import 'swiper/css/navigation';
 
 const aboutSlider = () => {
     const breakpoint = window.matchMedia( '(min-width:768px)' );
@@ -23,7 +24,7 @@ const aboutSlider = () => {
 
             // fire small viewport version of swiper
             return slider = new Swiper ('.about-slider', {
-                modules: [Scrollbar],
+                modules: [Scrollbar, Navigation],
                 spaceBetween: 20,
                 loop: false,
                 centeredSlides: false,
@@ -35,6 +36,10 @@ const aboutSlider = () => {
                     el: ".swiper-scrollbar",
                     hide: false,
                     draggable: true,
+                },
+                navigation: {
+                    nextEl: '.about-slider__next',
+                    prevEl: '.about-slider__prev',
                 },
                 breakpoints: {
                     0: {

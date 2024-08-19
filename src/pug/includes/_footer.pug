@@ -1,7 +1,7 @@
 footer.footer
     .container.container--fluid.footer__container
         .footer__row
-            .footer__col.animation-fade
+            .footer__col
                 .logo.footer__logo
                     a.logo__link(href="#" aria-label="logo")
                         img.logo__img(src="img/logo.svg" width="145" height="100" loading="lazy" alt="logo")
@@ -23,7 +23,7 @@ footer.footer
                                 svg.social__icon(width="22" height="16")
                                     use(xlink:href="img/sprite.svg#youtube")
 
-            .footer__col.animation-fade
+            .footer__col
                 h3.footer__title.footer__title--hidden-md
                     span Меню
 
@@ -58,7 +58,7 @@ footer.footer
                             li.footer-menu__item
                                 a.footer-menu__link(href="#") Права та обов'язки користувачів
             
-            .footer__col.animation-fade
+            .footer__col
                 h3.footer__title.footer__title--hidden-md
                     span Продукція
 
@@ -78,7 +78,7 @@ footer.footer
                             li.footer-menu__item
                                 a.footer-menu__link(href="#") WPSP-50S
 
-            .footer__col.animation-fade
+            .footer__col
                 h3.footer__title.footer__title--hidden-md
                     span Послуги
 
@@ -101,7 +101,7 @@ footer.footer
                             li.footer-menu__item
                                 a.footer-menu__link(href="#") Підтримка наших клієнтів
 
-            .footer__col.animation-fade
+            .footer__col
                 h3.footer__title
                     span Контакти
 
@@ -142,7 +142,6 @@ footer.footer
                 a.footer__dev-link(href="https://shafem.com/" aria-label="Developer link" target="_blank")
                     img.footer__dev-img(src="img/shafem.svg" width="103" height="22" loading="lazy" alt="shafem")
 
-    a.button.up-button(href="#main")
+    a.button.up-button(href="#main" data-scroll aria-label="Scroll to top")
         svg.button__icon(width="19" height="11")
             use(xlink:href="img/sprite.svg#up-arrow")
-            

@@ -20,7 +20,7 @@ section.catalog-section
 
             article.catalog-section__article
                 ul.catalog-section__list
-                    li.catalog-section__item.animation-fade
+                    li.catalog-section__item
                         article.product-card
                             a.product-card__link(href="#") 
                                 picture.product-card__picture
@@ -34,7 +34,7 @@ section.catalog-section
                                     a.button.product-card__button(href="#") Залишити заявку
                                     a.button.button--white.product-card__button(href="#") Детальніше
                             
-                    li.catalog-section__item.animation-fade
+                    li.catalog-section__item
                         article.product-card
                             a.product-card__link(href="#") 
                                 picture.product-card__picture
@@ -48,7 +48,7 @@ section.catalog-section
                                     a.button.product-card__button(href="#") Залишити заявку
                                     a.button.button--white.product-card__button(href="#") Детальніше
                     
-                    li.catalog-section__item.animation-fade
+                    li.catalog-section__item
                         article.product-card
                             a.product-card__link(href="#") 
                                 picture.product-card__picture
@@ -62,7 +62,7 @@ section.catalog-section
                                     a.button.product-card__button(href="#") Залишити заявку
                                     a.button.button--white.product-card__button(href="#") Детальніше
                             
-                    li.catalog-section__item.animation-fade
+                    li.catalog-section__item
                         article.product-card
                             a.product-card__link(href="#") 
                                 picture.product-card__picture
@@ -76,7 +76,7 @@ section.catalog-section
                                     a.button.product-card__button(href="#") Залишити заявку
                                     a.button.button--white.product-card__button(href="#") Детальніше
                     
-                    li.catalog-section__item.animation-fade
+                    li.catalog-section__item
                         article.product-card
                             a.product-card__link(href="#") 
                                 picture.product-card__picture
@@ -90,7 +90,7 @@ section.catalog-section
                                     a.button.product-card__button(href="#") Залишити заявку
                                     a.button.button--white.product-card__button(href="#") Детальніше
                             
-                    li.catalog-section__item.animation-fade
+                    li.catalog-section__item
                         article.product-card
                             a.product-card__link(href="#") 
                                 picture.product-card__picture
@@ -104,7 +104,7 @@ section.catalog-section
                                     a.button.product-card__button(href="#") Залишити заявку
                                     a.button.button--white.product-card__button(href="#") Детальніше
 
-                nav.pagination.catalog-section__pagination.animation-fade(aria-label="Page navigation")
+                nav.pagination.catalog-section__pagination(aria-label="Page navigation")
                     ul.pagination__list
                         li.pagination__item
                             button.pagination__button(type="button" aria-label="Previous page")
@@ -118,10 +118,16 @@ section.catalog-section
                             button.pagination__button(type="button") 2
                         
                         li.pagination__item
-                            span ...
+                            button.pagination__button(type="button") 3
                         
                         li.pagination__item
-                            button.pagination__button(type="button") 10
+                            button.pagination__button(type="button") 4
+                        
+                        //- li.pagination__item
+                        //-     span ...
+                        
+                        li.pagination__item
+                            button.pagination__button(type="button") 5
 
                         li.pagination__item
                             button.pagination__button(type="button" aria-label="Next page")

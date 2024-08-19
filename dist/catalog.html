@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <!--base(href="/")-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+        <!-- Title -->
+        <title>Catalog Page</title>
+        <!-- SEO Meta -->
+        <meta name="description" content="Description">
+        <meta name="keywords" content="keyword">
+        <!-- Favicon -->
+        <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+      <script type="module" crossorigin src="/assets/main-bf6b2327.js"></script>
+      <link rel="stylesheet" href="/assets/main-68e4bfde.css">
+    </head>
+    <body>
+        <!-- Preloader -->
+        
+<div class="preloader"><img class="preloader__img" src="img/logo.svg" width="145" height="101" alt="logo"/></div>
+
+        <!-- Header -->
+        
+<header class="header">
+  <div class="container container--fluid header__container">
+    <div class="logo header__logo"><a class="logo__link" href="#" aria-label="logo"><img class="logo__img" src="img/logo.svg" width="145" height="101" loading="lazy" alt="logo"/></a></div>
+    <nav class="menu header__menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a class="menu__link is-active" href="#">Головна</a></li>
+        <li class="menu__item"><a class="menu__link" href="#" data-toggle="menu-1" aria-expanded="false">Послуги
+            <svg class="menu__arrow" width="14" height="7">
+              <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+            </svg></a>
+          <ul class="menu__dropdown-list" id="menu-1" aria-hidden="true">
+            <li class="menu__dropdown-item"><a class="menu__dropdown-link is-active" href="#">Продаж обладнення</a></li>
+            <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Встановлення обладнення</a></li>
+            <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Обслуговування обладнення</a></li>
+            <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Підтримка наших клієнтів</a></li>
+          </ul>
+        </li>
+        <li class="menu__item"><a class="menu__link" href="#">Продукція</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Про компанію</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Контакти</a></li>
+      </ul>
+    </nav>
+    <div class="lang header__lang">
+      <div class="lang__inner">
+        <button class="lang__toggle" type="button" aria-label="Choose a language" data-toggle="lang-dropdown" aria-expanded="false">UA
+          <svg class="lang__toggle-arrow" width="14" height="7">
+            <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+          </svg>
+        </button>
+        <div class="lang__dropdown" id="lang-dropdown" aria-hidden="true">
+          <ul class="lang__list">
+            <li class="lang__item"><a class="lang__link" href="#">EN</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="actions header__actions">
+      <ul class="actions__list">
+        <li class="actions__item">
+          <button class="button actions__button" type="button" data-toggle="actions-1" aria-expanded="false" aria-label="Email">
+            <svg class="actions__icon" width="20" height="16">
+              <use xlink:href="img/sprite.svg#email"></use>
+            </svg>
+          </button>
+          <ul class="actions__dropdown-list" id="actions-1" aria-hidden="true">
+            <li class="actions__dropdown-item"><a class="actions__dropdown-link" href="mailto:info@e-holder.com">info@e-holder.com</a></li>
+          </ul>
+        </li>
+        <li class="actions__item">
+          <button class="button actions__button" type="button" data-toggle="actions-2" aria-expanded="false" aria-label="Phone">
+            <svg class="actions__icon" width="20" height="20">
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+          </button>
+          <ul class="actions__dropdown-list" id="actions-2" aria-hidden="true">
+            <li class="actions__dropdown-item"><a class="actions__dropdown-link" href="tel:+380111111111">+ 38 (011)-11-11- 111</a></li>
+          </ul>
+        </li>
+        <li class="actions__item">
+          <button class="button actions__button" type="button" data-toggle="actions-3" aria-expanded="false" aria-label="Work time">
+            <svg class="actions__icon" width="20" height="20">
+              <use xlink:href="img/sprite.svg#time"></use>
+            </svg>
+          </button>
+          <ul class="actions__dropdown-list" id="actions-3" aria-hidden="true">
+            <li class="actions__dropdown-item">
+              <p>Понеділок - П'ятниця: 9:00-18:00 </p>
+              <p>Субота - Неділя: вихідний</p>
+            </li>
+          </ul>
+        </li>
+        <li class="actions__item">
+          <button class="button actions__button" type="button" data-toggle="actions-4" aria-expanded="false" aria-label="Location">
+            <svg class="actions__icon" width="16" height="20">
+              <use xlink:href="img/sprite.svg#location"></use>
+            </svg>
+          </button>
+          <ul class="actions__dropdown-list" id="actions-4" aria-hidden="true">
+            <li class="actions__dropdown-item">
+              <p>716/24 Rybná, Prague 1, </p>
+              <p>post code: 11000, Czechia</p>
+            </li>
+          </ul>
+        </li>
+        <li class="actions__item actions__item--visible-lg">
+          <button class="button burger actions__button" type="button" aria-expanded="false" data-nav-toggle="data-nav-toggle" aria-label="Mobile menu"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></button>
+        </li>
+      </ul>
+    </div>
+    <button class="button header__button" type="button" data-modal="modal-callback">Залишити заявку</button>
+  </div>
+</header>
+
+        <!-- Main -->
+        <main id="main" class="main">
+            
+<section class="catalog-section">
+  <div class="container container--fluid catalog-section__container">
+    <header class="section-header catalog-section__header">
+      <nav class="breadcrumbs section-header__breadcrumbs animation-down" aria-label="breadcrumb">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Головна</a></li>
+          <li class="breadcrumbs__item" aria-current="page">Каталог продукції</li>
+        </ul>
+      </nav>
+      <h1 class="section-header__title animation-down" data-delay="0.4">Каталог продукції</h1>
+      <button class="button button--white catalog-section__filter-button animation-down" data-delay="0.6" type="button" data-filter-toggle="data-filter-toggle">Фільтр
+        <svg class="button__icon" width="26" height="24">
+          <use xlink:href="img/sprite.svg#filter"></use>
+        </svg>
+      </button>
+    </header>
+    <div class="catalog-section__inner">       
+      <aside class="catalog-section__sidebar">
+        <div class="filter">
+          <div class="filter__sidebar">
+            <div class="filter__header">
+              <h2 class="filter__title">Фільтр</h2>
+              <svg class="filter__icon" width="26" height="24">
+                <use xlink:href="img/sprite.svg#filter"></use>
+              </svg>
+              <button class="filter__close" type="button" aria-label="Close filter" data-filter-close="data-filter-close">
+                <svg class="filter__close-icon" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="filter__inner">
+              <div class="filter-block">
+                <button class="filter-block__toggle" type="button" data-trigger="filter-block-1" aria-expanded="true">Number of cylinder
+                  <svg class="filter-block__toggle-icon" width="16" height="12">
+                    <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+                  </svg>
+                </button>
+                <div class="filter-block__body" id="filter-block-1" aria-hidden="false">
+                  <div class="filter-block__inner">
+                    <ul class="filter-block__list">
+                      <li class="filter-block__item">
+                        <div class="checkbox filter-block__checkbox">
+                          <input class="checkbox__input" id="filterCheckbox-1" type="checkbox" name="filterCheckbox-1" value="true" checked="checked"/>
+                          <label class="checkbox__label" for="filterCheckbox-1">1</label>
+                        </div>
+                      </li>
+                      <li class="filter-block__item">
+                        <div class="checkbox filter-block__checkbox">
+                          <input class="checkbox__input" id="filterCheckbox-2" type="checkbox" name="filterCheckbox-2" value="true"/>
+                          <label class="checkbox__label" for="filterCheckbox-2">2</label>
+                        </div>
+                      </li>
+                      <li class="filter-block__item">
+                        <div class="checkbox filter-block__checkbox">
+                          <input class="checkbox__input" id="filterCheckbox-3" type="checkbox" name="filterCheckbox-3" value="true"/>
+                          <label class="checkbox__label" for="filterCheckbox-3">3</label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-block">
+                <button class="filter-block__toggle" type="button" data-trigger="filter-block-2" aria-expanded="true">Cylinder arrangement
+                  <svg class="filter-block__toggle-icon" width="16" height="12">
+                    <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+                  </svg>
+                </button>
+                <div class="filter-block__body" id="filter-block-2" aria-hidden="false">
+                  <div class="filter-block__inner">
+                    <ul class="filter-block__list">
+                      <li class="filter-block__item">
+                        <div class="checkbox filter-block__checkbox">
+                          <input class="checkbox__input" id="filterCheckbox-21" type="checkbox" name="filterCheckbox-21" value="true" checked="checked"/>
+                          <label class="checkbox__label" for="filterCheckbox-21">Standard Voltages 380 – 415 Volts</label>
+                        </div>
+                      </li>
+                      <li class="filter-block__item">
+                        <div class="checkbox filter-block__checkbox">
+                          <input class="checkbox__input" id="filterCheckbox-22" type="checkbox" name="filterCheckbox-22" value="true"/>
+                          <label class="checkbox__label" for="filterCheckbox-22">Standard Voltages 380 – 415 Volts</label>
+                        </div>
+                      </li>
+                      <li class="filter-block__item">
+                        <div class="checkbox filter-block__checkbox">
+                          <input class="checkbox__input" id="filterCheckbox-23" type="checkbox" name="filterCheckbox-23" value="true"/>
+                          <label class="checkbox__label" for="filterCheckbox-23">Standard Voltages 380 – 415 Volts</label>
+                        </div>
+                      </li>
+                      <li class="filter-block__item">
+                        <div class="checkbox filter-block__checkbox">
+                          <input class="checkbox__input" id="filterCheckbox-24" type="checkbox" name="filterCheckbox-24" value="true" checked="checked"/>
+                          <label class="checkbox__label" for="filterCheckbox-24">Standard Voltages 380 – 415 Volts</label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-block">
+                <button class="filter-block__toggle" type="button" data-trigger="filter-block-3" aria-expanded="true">Combustion system
+                  <svg class="filter-block__toggle-icon" width="16" height="12">
+                    <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+                  </svg>
+                </button>
+                <div class="filter-block__body" id="filter-block-3" aria-hidden="false">
+                  <div class="filter-block__inner">
+                    <ul class="filter-block__list">
+                      <li class="filter-block__item">
+                        <div class="checkbox filter-block__checkbox">
+                          <input class="checkbox__input" id="filterCheckbox-31" type="checkbox" name="filterCheckbox-31" value="true" checked="checked"/>
+                          <label class="checkbox__label" for="filterCheckbox-31">3 Phase 50/60HZ</label>
+                        </div>
+                      </li>
+                      <li class="filter-block__item">
+                        <div class="checkbox filter-block__checkbox">
+                          <input class="checkbox__input" id="filterCheckbox-32" type="checkbox" name="filterCheckbox-32" value="true"/>
+                          <label class="checkbox__label" for="filterCheckbox-32">3 Phase 50/60HZ</label>
+                        </div>
+                      </li>
+                      <li class="filter-block__item">
+                        <div class="checkbox filter-block__checkbox">
+                          <input class="checkbox__input" id="filterCheckbox-33" type="checkbox" name="filterCheckbox-33" value="true"/>
+                          <label class="checkbox__label" for="filterCheckbox-33">3 Phase 50/60HZ</label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="filter__buttons-group">
+                <button class="button filter__button" type="button">Застосувати</button>
+                <button class="button button--white filter__button" type="button">Очистити</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <article class="catalog-section__article">
+        <ul class="catalog-section__list">
+          <li class="catalog-section__item">
+            <article class="product-card"><a class="product-card__link" href="#"> 
+                <picture class="product-card__picture"><img class="product-card__img" src="img/product-img.webp" srcset="img/product-img@2x.webp 2x" loading="lazy" width="441" height="284" alt="alt"/></picture></a>
+              <div class="product-card__content">
+                <h3 class="product-card__title">WPSP-22S</h3>
+                <p class="product-card__descr">Standard Voltages 380 – 415 Volts 3 Phase 50/60HZ</p>
+                <div class="product-card__buttons"><a class="button product-card__button" href="#">Залишити заявку</a><a class="button button--white product-card__button" href="#">Детальніше</a></div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-section__item">
+            <article class="product-card"><a class="product-card__link" href="#"> 
+                <picture class="product-card__picture"><img class="product-card__img" src="img/product-img.webp" srcset="img/product-img@2x.webp 2x" loading="lazy" width="441" height="284" alt="alt"/></picture></a>
+              <div class="product-card__content">
+                <h3 class="product-card__title">WPSP-22S</h3>
+                <p class="product-card__descr">Standard Voltages 380 – 415 Volts 3 Phase 50/60HZ</p>
+                <div class="product-card__buttons"><a class="button product-card__button" href="#">Залишити заявку</a><a class="button button--white product-card__button" href="#">Детальніше</a></div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-section__item">
+            <article class="product-card"><a class="product-card__link" href="#"> 
+                <picture class="product-card__picture"><img class="product-card__img" src="img/product-img.webp" srcset="img/product-img@2x.webp 2x" loading="lazy" width="441" height="284" alt="alt"/></picture></a>
+              <div class="product-card__content">
+                <h3 class="product-card__title">WPSP-22S</h3>
+                <p class="product-card__descr">Standard Voltages 380</p>
+                <div class="product-card__buttons"><a class="button product-card__button" href="#">Залишити заявку</a><a class="button button--white product-card__button" href="#">Детальніше</a></div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-section__item">
+            <article class="product-card"><a class="product-card__link" href="#"> 
+                <picture class="product-card__picture"><img class="product-card__img" src="img/product-img.webp" srcset="img/product-img@2x.webp 2x" loading="lazy" width="441" height="284" alt="alt"/></picture></a>
+              <div class="product-card__content">
+                <h3 class="product-card__title">WPSP-22S</h3>
+                <p class="product-card__descr">Standard Voltages 380 – 415 Volts 3 Phase 50/60HZ</p>
+                <div class="product-card__buttons"><a class="button product-card__button" href="#">Залишити заявку</a><a class="button button--white product-card__button" href="#">Детальніше</a></div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-section__item">
+            <article class="product-card"><a class="product-card__link" href="#"> 
+                <picture class="product-card__picture"><img class="product-card__img" src="img/product-img.webp" srcset="img/product-img@2x.webp 2x" loading="lazy" width="441" height="284" alt="alt"/></picture></a>
+              <div class="product-card__content">
+                <h3 class="product-card__title">WPSP-22S</h3>
+                <p class="product-card__descr">Standard Voltages 380 – 415 Volts 3 Phase 50/60HZ</p>
+                <div class="product-card__buttons"><a class="button product-card__button" href="#">Залишити заявку</a><a class="button button--white product-card__button" href="#">Детальніше</a></div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-section__item">
+            <article class="product-card"><a class="product-card__link" href="#"> 
+                <picture class="product-card__picture"><img class="product-card__img" src="img/product-img.webp" srcset="img/product-img@2x.webp 2x" loading="lazy" width="441" height="284" alt="alt"/></picture></a>
+              <div class="product-card__content">
+                <h3 class="product-card__title">WPSP-22S</h3>
+                <p class="product-card__descr">Standard Voltages 380 – 415 Volts 3 Phase 50/60HZ</p>
+                <div class="product-card__buttons"><a class="button product-card__button" href="#">Залишити заявку</a><a class="button button--white product-card__button" href="#">Детальніше</a></div>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <nav class="pagination catalog-section__pagination" aria-label="Page navigation">
+          <ul class="pagination__list">
+            <li class="pagination__item">
+              <button class="pagination__button" type="button" aria-label="Previous page">
+                <svg class="pagination__icon" width="9" height="14">
+                  <use xlink:href="img/sprite.svg#arrow-left"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="pagination__item is-active" aria-current="page">
+              <button class="pagination__button" type="button">1</button>
+            </li>
+            <li class="pagination__item">
+              <button class="pagination__button" type="button">2</button>
+            </li>
+            <li class="pagination__item">
+              <button class="pagination__button" type="button">3</button>
+            </li>
+            <li class="pagination__item">
+              <button class="pagination__button" type="button">4</button>
+            </li>
+            <li class="pagination__item">
+              <button class="pagination__button" type="button">5</button>
+            </li>
+            <li class="pagination__item">
+              <button class="pagination__button" type="button" aria-label="Next page">
+                <svg class="pagination__icon" width="9" height="14">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </article>
+    </div>
+  </div>
+</section>
+            
+<section class="seo-section">
+  <div class="container container--fluid seo-section__container">
+    <div class="seo-section__inner">
+      <picture class="seo-section__picture animation-fade"><img class="seo-section__img" src="img/seo-img.webp" srcset="img/seo-img@2x.webp 2x" loading="lazy" width="965" height="474" alt="alt"/></picture>
+      <div class="seo-section__content">
+        <div class="caption caption--black animation-title seo-section__caption">
+          <div class="caption__inner">
+            <div class="caption__bg-text">Seo текст</div>
+            <h2 class="caption__title">Seo текст</h2>
+          </div>
+        </div>
+        <div class="seo animation-down">
+          <div class="seo__text">
+            <p>Компанія E-holder – це ваш надійний партнер у світі альтернативних джерел енергії. Ми спеціалізуємося на наданні комплексних рішень для створення екологічно чистих та економічно ефективних енергетичних систем. Наша мета – допомогти клієнтам перейти на відновлювані джерела енергії, забезпечуючи високий рівень сервісу та підтримки на кожному етапі взаємодії. В основі нашої роботи лежать чотири ключові напрями: продаж обладнання, встановлення, обслуговування та підтримка клієнтів.</p>
+            <p>Компанія E-holder – це ваш надійний партнер у світі альтернативних джерел енергії. Ми спеціалізуємося на наданні комплексних рішень для створення екологічно чистих та економічно ефективних енергетичних систем. Наша мета – допомогти клієнтам перейти на відновлювані джерела енергії, забезпечуючи високий рівень сервісу та підтримки на кожному етапі взаємодії. В основі нашої роботи лежать чотири ключові напрями: продаж обладнання, встановлення, обслуговування та підтримка клієнтів.</p>
+            <p>Компанія E-holder – це ваш надійний партнер у світі альтернативних джерел енергії. Ми спеціалізуємося на наданні комплексних рішень для створення екологічно чистих та економічно ефективних енергетичних систем. Наша мета – допомогти клієнтам перейти на відновлювані джерела енергії, забезпечуючи високий рівень сервісу та підтримки на кожному етапі взаємодії. В основі нашої роботи лежать чотири ключові напрями: продаж обладнання, встановлення, обслуговування та підтримка клієнтів.</p>
+          </div>
+          <button class="seo__toggle" type="button">Детальніше
+            <svg class="seo__toggle-arrow" width="14" height="7">
+              <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        </main>
+
+        <!-- Footer -->
+        
+<footer class="footer">
+  <div class="container container--fluid footer__container">
+    <div class="footer__row">
+      <div class="footer__col">
+        <div class="logo footer__logo"><a class="logo__link" href="#" aria-label="logo"><img class="logo__img" src="img/logo.svg" width="145" height="100" loading="lazy" alt="logo"/></a></div>
+        <address class="social footer__social">
+          <ul class="social__list">
+            <li class="social__item"><a class="button social__button" href="#" aria-label="Facebook">
+                <svg class="social__icon" width="12" height="22">
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg></a></li>
+            <li class="social__item"><a class="button social__button" href="#" aria-label="Instagram">
+                <svg class="social__icon" width="22" height="22">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg></a></li>
+            <li class="social__item"><a class="button social__button" href="#" aria-label="YouTube">
+                <svg class="social__icon" width="22" height="16">
+                  <use xlink:href="img/sprite.svg#youtube"></use>
+                </svg></a></li>
+          </ul>
+        </address>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title footer__title--hidden-md"><span>Меню</span></h3>
+        <nav class="footer-menu">
+          <button class="footer-menu__toggle" type="button" data-trigger="footer-menu-1" aria-expanded="true">Меню
+            <svg class="footer-menu__toggle-icon" width="15" height="9">
+              <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+            </svg>
+          </button>
+          <div class="footer-menu__inner" id="footer-menu-1" aria-hidden="false">
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Головна</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Послуги</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Продукція</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Про компанію</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Контакти</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Умови використання сайту</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Політика конфіденційності</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Права та обов'язки користувачів</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title footer__title--hidden-md"><span>Продукція</span></h3>
+        <nav class="footer-menu">
+          <button class="footer-menu__toggle" type="button" data-trigger="footer-menu-2" aria-expanded="true">Продукція
+            <svg class="footer-menu__toggle-icon" width="15" height="9">
+              <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+            </svg>
+          </button>
+          <div class="footer-menu__inner" id="footer-menu-2" aria-hidden="false">
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">WPSP-22S</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">WPSP-33S</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">WPSP-50S</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title footer__title--hidden-md"><span>Послуги</span></h3>
+        <nav class="footer-menu">
+          <button class="footer-menu__toggle" type="button" data-trigger="footer-menu-3" aria-expanded="true">Послуги
+            <svg class="footer-menu__toggle-icon" width="15" height="9">
+              <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+            </svg>
+          </button>
+          <div class="footer-menu__inner" id="footer-menu-3" aria-hidden="false">
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Продаж обладнання</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Встановлення обладнання</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Обслуговування обладнання</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Підтримка наших клієнтів</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title"><span>Контакти</span></h3>
+        <address class="contacts footer__contacts">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <svg class="contacts__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+              <div class="contacts__content"><a class="contacts__link" href="tel:+ 380111111111">+ 38 (011)-11-11-111</a></div>
+            </li>
+            <li class="contacts__item">
+              <svg class="contacts__icon" width="20" height="16">
+                <use xlink:href="img/sprite.svg#email"></use>
+              </svg>
+              <div class="contacts__content"><a class="contacts__link" href="mailto:info@e-holder.com">info@e-holder.com</a></div>
+            </li>
+            <li class="contacts__item">
+              <svg class="contacts__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#time"></use>
+              </svg>
+              <div class="contacts__content">
+                <p class="contacts__text">Понеділок - П'ятниця: 9:00-18:00 Субота - Неділя: вихідний</p>
+              </div>
+            </li>
+            <li class="contacts__item">
+              <svg class="contacts__icon" width="16" height="20">
+                <use xlink:href="img/sprite.svg#location"></use>
+              </svg>
+              <div class="contacts__content">
+                <p class="contacts__text">716/24 Rybná, Prague 1, post code: 11000, Czechia</p>
+              </div>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__copyright">&copy; E-holder 2024 Всі права захищені.</div>
+      <div class="footer__dev">Розроблено<a class="footer__dev-link" href="https://shafem.com/" aria-label="Developer link" target="_blank"><img class="footer__dev-img" src="img/shafem.svg" width="103" height="22" loading="lazy" alt="shafem"/></a></div>
+    </div>
+  </div><a class="button up-button" href="#main" data-scroll="data-scroll" aria-label="Scroll to top">
+    <svg class="button__icon" width="19" height="11">
+      <use xlink:href="img/sprite.svg#up-arrow"></use>
+    </svg></a>
+</footer>
+
+        <!-- Mobile Nav -->
+        
+<div class="mobile-nav">
+  <div class="mobile-nav__sidebar">
+    <div class="mobile-nav__inner">
+      <nav class="mobile-nav-menu">
+        <ul class="mobile-nav-menu__list">
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Головна</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Послуги</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Продукція</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Про компанію</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-nav__bottom">
+        <button class="button mobile-nav__button" type="button" data-modal="modal-callback">Залишити заявку</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <!-- Modals -->
+        
+<div class="modal-wrap">
+  <div class="modal" id="modal-callback">
+    <div class="modal__inner">
+      <div class="modal__window">
+        <button class="modal__close" aria-label="Close modal" data-modal-close="data-modal-close" type="button">
+          <svg class="modal__close-icon" width="20" height="20">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal__content">
+          <form class="form modal__form" id="callback-form" autocomplete="off" novalidate="novalidate">
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Залишити заявку</legend>
+              <div class="form__group">
+                <input class="input form__input" id="callbackInputName" type="text" name="callbackInputName" placeholder="Ім'я *" data-error-message="Введіть імʼя" autocomplete="off" required="required"/>
+              </div>
+              <div class="form__group">
+                <input class="input form__input tell-input" id="callbackInputPhone" type="tel" name="callbackInputPhone" data-error-message="Введіть телефон" autocomplete="off" required="required"/>
+              </div>
+              <div class="form__group">
+                <input class="input form__input" id="callbackInputEmail" type="email" name="callbackInputEmail" placeholder="Пошта *" data-error-message="Введіть email" autocomplete="off" required="required"/>
+              </div>
+              <div class="form__group">
+                <textarea class="textarea form__input" id="callbackTextarea" name="callbackTextarea" rows="4" placeholder="Коментар" autocomplete="off"></textarea>
+              </div>
+              <div class="form__group">
+                <input class="input form__input date-input" id="callbackInputTime" type="text" name="callbackInputTime" placeholder="Бажаний час (9:00 - 18:00, кожні пів години)" autocomplete="off"/>
+              </div>
+              <div class="form__group form__group--center">
+                <div class="checkbox">
+                  <input class="checkbox__input" id="callbackAgree" type="checkbox" name="callbackAgree" value="true" required="required"/>
+                  <label class="checkbox__label" for="callbackAgree">Погоджуюсь з <a class="checkbox__link" href="#">Політикою конфіденційності</a> та <a class="checkbox__link" href="#">Умовами використання сайту</a></label>
+                </div>
+              </div>
+              <div class="form__group form__group--center">
+                <button class="button form__button">Відправити</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+    </body>
+</html>

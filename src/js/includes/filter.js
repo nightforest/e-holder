@@ -1,3 +1,6 @@
+import disableScroll from "./disableScroll";
+import enableScroll from "./enableScroll";
+
 const filter = () => {
     const body = document.querySelector('body');
     const filter = document.querySelector(".filter");
@@ -7,19 +10,19 @@ const filter = () => {
     filterToggle?.addEventListener('click', e => {
         e.preventDefault();
 
-        body?.classList.add('scroll-disabled');
+        disableScroll();
         filter?.classList.add('is-visible');
     });
 
     filter?.addEventListener('click', e => {
         if (!e.target.closest('.filter__sidebar')) {
-            body?.classList.remove('scroll-disabled');
+            enableScroll();
             filter?.classList.remove('is-visible');
         }
     });
 
     filterClose?.addEventListener('click', () => {
-        body?.classList.remove('scroll-disabled');
+        enableScroll();
         filter?.classList.remove('is-visible');
     });
 }

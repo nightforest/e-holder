@@ -44,11 +44,11 @@ const animation = () => {
             display: "none",
             onComplete: startScrollTrigger,
         });
-        tl.from(".header", 1, {
-            opacity: 0,
-            yPercent: -100,
-            ease: "power3.inOut"
-        });
+        // tl.from(".header", 1, {
+        //     opacity: 0,
+        //     yPercent: -100,
+        //     ease: "power3.inOut"
+        // });
         headerScroll();
     });
 

@@ -10,7 +10,7 @@ const customCursor = () => {
             speed: .5,
             iconSvgSrc: '/img/cursor.svg',
             stateDetection: {
-                '-pointer': 'a, button, label, .button, .input, .gallery-thumbs__slide',
+                '-pointer': 'a, button, label, .button, .input, input, .gallery-thumbs__slide',
                 '-hidden': 'iframe',
                 '-exclusion': '.button',
             },

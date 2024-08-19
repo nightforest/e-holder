@@ -3,13 +3,13 @@
     top: 0
     left: 0
     width: 100%
-    padding: 15px 0
+    // padding: 15px 0
     z-index: $z-index-3
     background: var(--white)
     transition: box-shadow .5s ease, padding .5s ease, background .5s ease
 
-    @media ($max-md)
-        padding: 10px 0
+    // @media ($max-md)
+    //     padding: 10px 0
 
     &.is-scroll
         box-shadow: 0 0 0 1px var(--black)
@@ -21,6 +21,8 @@
         display: flex
         align-items: center
         gap: 40px
+        padding-top: 15px
+        padding-bottom: 15px
 
         @media ($max-xxl)
             gap: 20px
@@ -30,6 +32,8 @@
         
         @media ($max-md)
             gap: 6px
+            padding-top: 5px
+            padding-bottom: 5px
 
     &__logo
 
@@ -42,8 +46,8 @@
                 height: 50px
                 width: auto
 
-            @media ($max-md)
-                height: 35px
+            // @media ($max-md)
+            //     height: 35px
 
     &__menu
         margin: 0 auto
