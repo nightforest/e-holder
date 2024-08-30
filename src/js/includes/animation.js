@@ -4,6 +4,8 @@ import SmoothScroll from "smoothscroll-for-websites/SmoothScroll"
 import headerScroll from './headerScroll.js';
 
 const animation = () => {
+    const preloader = document.querySelector('.preloader');
+
     gsap.registerPlugin(ScrollTrigger);
     
     SmoothScroll({
@@ -13,46 +15,45 @@ const animation = () => {
 
     const tl = gsap.timeline();
 
-    tl.set(".preloader__img", {
-        display: "block",
-    });
-    tl.from(".preloader__img", 1, {
-        opacity: 0,
-        ease: "power3.inOut",
-    });
-
-    window.addEventListener('load', () => {
-        gsap.utils.toArray(".parallax-section").forEach(function(container) {
-            const image = container.querySelector(".parallax-section__bg");
-          
-            gsap.to(image, {
-                y: '20%',
-                scrollTrigger: {
-                    trigger: container,
-                    // start: '0',
-                    // end: '100%',
-                    scrub: true,
-                },
-            });
+    if (preloader) {
+        tl.set(".preloader__img", {
+            display: "block",
         });
-
-        tl.to(".preloader", 1, {
-            yPercent: -100,
+        tl.from(".preloader__img", 1, {
+            opacity: 0,
             ease: "power3.inOut",
         });
-        tl.set(".preloader", {
-            display: "none",
-            onComplete: startScrollTrigger,
+
+        window.addEventListener('load', () => {
+            gsap.utils.toArray(".parallax-section").forEach(function(container) {
+                const image = container.querySelector(".parallax-section__bg");
+              
+                gsap.to(image, {
+                    y: '20%',
+                    scrollTrigger: {
+                        trigger: container,
+                        // start: '0',
+                        // end: '100%',
+                        scrub: true,
+                    },
+                });
+            });
+    
+            tl.to(".preloader", 1, {
+                yPercent: -100,
+                ease: "power3.inOut",
+            });
+            tl.set(".preloader", {
+                display: "none",
+                onComplete: startScrollTrigger,
+            });
+            headerScroll();
         });
-        // tl.from(".header", 1, {
-        //     opacity: 0,
-        //     yPercent: -100,
-        //     ease: "power3.inOut"
-        // });
+    } else {
+        startScrollTrigger();
         headerScroll();
-    });
-
-
+    }
+    
     function startScrollTrigger() {
         gsap.utils.toArray('.animation-zoom').forEach(function(animatedElement) {
             const delay = animatedElement.getAttribute('data-delay') ? animatedElement.getAttribute('data-delay') : 0;
@@ -184,43 +185,7 @@ const animation = () => {
                 toggleClass: { targets: animatedElement, className: "is-animated" }
             });
         });
-
-        
-
-        // gsap.utils.toArray(".parallax-section").forEach(function(container) {
-        //     let image = container.querySelector(".parallax-section__bg");
-          
-        //     let tl = gsap.timeline({
-        //         scrollTrigger: {
-        //           trigger: container,
-        //           scrub: true,
-        //           pin: false,
-        //         },
-        //       }); 
-        //       tl.from(image, {
-        //         yPercent: -50,
-        //         ease: "none",
-        //       }).to(image, {
-        //         yPercent: 50,
-        //         ease: "none",
-        //       }); 
-        // });
-
-        // const captionAll = document.querySelectorAll('.caption');
-
-        // captionAll.forEach(item => {
-        //     gsap.to(item.querySelector('.caption__bg-text'), {
-        //         yPercent: 30,
-        //         ease: "none",
-        //         scrollTrigger: {
-        //             trigger: item,
-        //             scrub: true
-        //         }, 
-        //     });
-        // });
     }
-
-    
 }
 
 export default animation;
